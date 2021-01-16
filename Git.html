@@ -39,28 +39,38 @@
                           <div class="js-toc-content">
                           <!-- using content splitup instead of the whole page.content to add id to headers for the TOC to work -->
                           <!-- these IDs are for TOC and they are lame but they work. ideally zim would provide a random function -->
-								<!-- <h1 id="12961106">Git</h1> -->
+								<!-- <h1 id="23131166">Git</h1> -->
 								
 								
                             	<p>
-Created Sunday 08 November 2020
-</p>
-
-<p>
 <ul>
 <li>Repositories can not be located on folders pointed by cloud services since it can cause conflicts. it means that the repositories would be updated only from PC. Thus they are located at <a href="file:///D:/_repos" title="_repos" class="file">_repos</a> folder</li>
-<li>You can initialize a new separate (local) repository with <tt>git init --separate-git-dir /path/to/repo.git</tt> . This will initialize the git repository in the separate directory and add the .git file in the current directory, which is the working directory of the new repository.</li>
+<li>You can initialize a new separate (local) repository with <tt>git init --separate-git-dir /path/to/repo/</tt> . This will initialize the git repository in the separate directory and add the .git file in the current directory, which is the working directory of the new repository.</li>
 </ul>
 <div style='padding-left: 240pt'>
 <img src="./Git/pasted_image001.png" width="512">
 </div>
 <ul>
-<li>Cheatsheet <a href="http://ndpsoftware.com/git-cheatsheet.html#loc=workspace" title="here" class="http">here</a></li>
-<li>Repositories are backup externally in <a href="https://github.com/" title="github" class="https">github</a> : unal : 500efa550t (Vs)
-<ul>
-<li>Free student subscription until 23/01/2021</li>
-</ul>
+<li>The stages can be summarized as follows, check this  <a href="http://ndpsoftware.com/git-cheatsheet.html#loc=workspace" title="cheatsheet" class="http">cheatsheet</a> for reference:
+<ol type="1" start="1">
+<li>Create a repository  in <a href="https://github.com/" title="GitHub" class="https">GitHub</a> called, for example <tt>[repo_name]</tt> </li>
+<li>Open git and open the <tt>[repo_name]</tt> project. </li>
+<li>Initialize a new separate (local) repository with <tt>git init --separate-git-dir /d/_repos/[repo_name]/</tt></li>
+<li>Add all files to the index (staging) with <tt>git add --all</tt></li>
+<li>Commit files from workspace to local repository with <tt>git commit -a -m '[msg]' </tt>do not forget to include a message.</li>
+<li>Create remote <tt>git remote add origin https://github.com/grimdorlf/[repo_name].git</tt>  </li>
+<li>Push (upload) to remote <tt> git push origin master</tt> </li>
+</ol>
 </li>
+<li>Further commits
+<ol type="1" start="1">
+<li>Check status <tt>git status</tt> or changes <tt>git diff</tt></li>
+<li>Add new and modified files to index <tt>git add .</tt></li>
+<li>Commit from index (all) <tt>git commit -m '[msg2]' </tt> or from workspace (only indexed files) <tt> git commit -a -m '[msg2]' </tt>to local.</li>
+<li>Push (upload) to remote <tt> git push origin master</tt> </li>
+</ol>
+</li>
+<li><s>Free student subscription until 23/01/2021</s></li>
 <li><s>repositories can be cloned (mirror) to a flash drive for secure via svnsync</s></li>
 <li><s>it would be possible to edit the files of the working directory remotely (e.g. tablet) via cloud services. (check)</s></li>
 </ul>
@@ -119,7 +129,7 @@ Created Sunday 08 November 2020
                             <form action="https://www.google.com/search" method="GET" name="searchForm" id="searchForm" enctype="application/x-www-form-urlencoded" >
 
 							<div id="simpleSearch">
-							<input name="sitesearch" value="grimdorlf.github.io" type="hidden">
+							<input name="sitesearch" value="grimdorlf.github.io/technotes" type="hidden">
                             <input id="searchInput" name="q" results="0" placeholder="Search {SITE_TITLE}..." title="Search {SITE_TITLE}..." tabindex="1" autocomplete="off" type="search">
                             <input id="searchButton" name="go" value="Go" title="Go to a page with this exact name if it exists" class="searchButton" type="submit">
 							</div>
@@ -141,17 +151,17 @@ Created Sunday 08 November 2020
         </div>
         <div class="collapsible-nav" id="mw-panel">
             <div id="p-logo" role="banner">
-                <a style="background-image: url(./_resources/logo.png); background-size: contain;" href="./grimdorlf.github.io/About.html" title="Visit the main page"><span></span></a>
+                <a style="background-image: url(./_resources/logo.png); background-size: contain;" href="./grimdorlf.github.iotechnotes/About.html" title="Visit the main page"><span></span></a>
             </div>
             <div class="portal first persistent" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
                 <h3 id="p-navigation-label">Navigation</h3>
                 <div class="body">
                     <ul>
-                        <!-- <li ><a href="./grimdorlf.github.io/index.html">Main page</a></li> -->
-                        <!-- <li ><a href="./grimdorlf.github.io/How_To.html">How To</a></li> -->
-                        <!-- <li ><a href="./grimdorlf.github.io/Troubleshooting.html">Troubleshoting</a></li> -->
-                        <!-- <li ><a href="./grimdorlf.github.io/Technical_Notes.html">Technical Notes</a></li> -->
-                        <!-- <li ><a href="./grimdorlf.github.io/Tools_and_Scripts.html">Tools and Scripts</a></li> -->
+                        <!-- <li ><a href="./grimdorlf.github.iotechnotes/index.html">Main page</a></li> -->
+                        <!-- <li ><a href="./grimdorlf.github.iotechnotes/How_To.html">How To</a></li> -->
+                        <!-- <li ><a href="./grimdorlf.github.iotechnotes/Troubleshooting.html">Troubleshoting</a></li> -->
+                        <!-- <li ><a href="./grimdorlf.github.iotechnotes/Technical_Notes.html">Technical Notes</a></li> -->
+                        <!-- <li ><a href="./grimdorlf.github.iotechnotes/Tools_and_Scripts.html">Tools and Scripts</a></li> -->
 						<ul>
 <li><a href="./Biblio_organizers.html" title="Biblio organizers" class="page">Biblio organizers</a></li>
 <li><a href="./Cloud_computing.html" title="Cloud computing" class="page">Cloud computing</a></li>
@@ -183,9 +193,9 @@ Created Sunday 08 November 2020
             <div class="portal">
             	<div style="display: block;" class="body">
             		<ul id="p-tb-list">
-                        <li><a href="./grimdorlf.github.io/index.html" title="Index">Index</a></li>
-                        <li><a href="./grimdorlf.github.io/About.html" title="About">About</a></li>
-                        <!-- <li><a href="./grimdorlf.github.io/Contact_Info.html" title="Contact Info">Contact Info</a></li> -->
+                        <li><a href="./grimdorlf.github.iotechnotes/index.html" title="Index">Index</a></li>
+                        <li><a href="./grimdorlf.github.iotechnotes/About.html" title="About">About</a></li>
+                        <!-- <li><a href="./grimdorlf.github.iotechnotes/Contact_Info.html" title="Contact Info">Contact Info</a></li> -->
             		</ul>
             	</div>
             </div>
@@ -193,8 +203,8 @@ Created Sunday 08 November 2020
     </div>
     <div id="footer" role="contentinfo">
         <ul id="footer-places">
-            <li id="footer-places-about"><a href="./grimdorlf.github.io/About.html" title="About">About {SITE_TITLE}</a></li>
-            <!-- <li id="footer-places-disclaimer"><a href="./grimdorlf.github.io/General_disclaimer.html" title="General disclaimer">Disclaimers</a></li> -->
+            <li id="footer-places-about"><a href="./grimdorlf.github.iotechnotes/About.html" title="About">About {SITE_TITLE}</a></li>
+            <!-- <li id="footer-places-disclaimer"><a href="./grimdorlf.github.iotechnotes/General_disclaimer.html" title="General disclaimer">Disclaimers</a></li> -->
             <li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by/3.0/">Attribution 3.0 Unported</a> unless otherwise noted.</li>
         </ul>
 		<ul id="footer-icons" class="noprint">
@@ -297,7 +307,7 @@ $(document).mouseup(function(e) {
 
 /*  disqus */
 var disqus_config = function () {
-	this.page.url = "http://grimdorlf.github.io/Git.html-1";
+	this.page.url = "http://grimdorlf.github.io/technotes/Git.html-1";
 	this.page.identifier = "Git-1";
 };
 
