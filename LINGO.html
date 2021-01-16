@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html dir="ltr" class="client-js" lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>LINGO</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+    <link rel="copyright" href="http://creativecommons.org/licenses/by/3.0/">
+    <link rel="stylesheet" href="./_resources/wikdorlf.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/3.0.2/tocbot.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/3.0.2/tocbot.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.1/lunr.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/languages/dos.min.js"></script>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/github.min.css">
+
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 skin-vector action-view vector-animateLayout">
+    <div id="mw-page-base" class="noprint"><span></span></div>
+    <div id="mw-head-base" class="noprint"><span></span></div>
+    <div id="content" class="mw-body" role="main">
+        <a id="top"></a>
+        <div id="mw-js-message" style="display:none;"></div>
+        <h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">
+		LINGO
+		</span></h1>
+        <div id="bodyContent">
+            <div id="mw-content-text" dir="ltr" class="mw-content-ltr" lang="en">
+				<!--  -->
+                          <div class="js-toc"><span></span></div>
+                          <div class="js-toc-content">
+                          <!-- using content splitup instead of the whole page.content to add id to headers for the TOC to work -->
+                          <!-- these IDs are for TOC and they are lame but they work. ideally zim would provide a random function -->
+								<!-- <h1 id="69981568">LINGO</h1> -->
+								
+								
+                            	<p>
+Created Saturday 18 August 2018<br>
+<ul>
+<li>Renewable academic license every 6 months</li>
+<li>commercial solver (high efficiency)</li>
+<li>links with excel</li>
+<li>easy to use, some background</li>
+<li>easy help from colleagues</li>
+<li>linked with zaragoza (Lozano)</li>
+<li>Lingo does not permit data mismatch (number of values different than the number of variables) in a set.</li>
+<li>Models written using LINGO can be exported in <i>*.MPI</i> or <i>*.MPS</i> formats.</li>
+</ul>
+<div style='padding-left: 30pt'>
+<i>MPI</i> format was developed by LINDO Systems as a portable format for representing arbitrary math programming models.<br>
+<i>MPS</i> format  Essentially all commercial LP solvers accept this format, and it is also accepted by the open-source <i>COIN-OR</i> system.
+</div>
+</p>
+
+<p>
+<b> A variable in the optimal solution has a reduced cost = 0</b><br>
+<u>Reduced Cost:</u> Amount of penalty you have to pay to introduce one unit of that variable into the solution.<br>
+<u>Penalty:</u> Objective value decreases in maximization problems, or increases in minimization problems.<br>
+<b>Slack or surplus:</b> how close you are to satisfying a constraint as an equality.<br>
+<b>Dual price:</b>the amount that the objective value would improve as the constant term of the constraint of the constraint is increased by one unit.
+</p>
+
+<p>
+2017_LINGO The modeling Language and Optimizer<br>
+Chp 1. Getting Started<br>
+#lingo ##terms #lingo ##application #lingo ##features<br>
+On machines other than Windows, Mac and Linux, you may have to interface with LINGO through the means of a command-line prompt. <br>
+Objective Function is a formula that expresses exactly what it is you want to optimize.<br>
+Variables are the quantities you have under your control. <br>
+variables are sometimes also called decision variables. <br>
+The goal of optimization is to find the values of a model's variables that generate the best value for the objective function, subject to any limiting conditions placed on the variables. <br>
+constraints are the limiting conditions expressed as functions of the models variables. <br>
+expressions must be terminated with a semicolon.<br>
+Comments begin with an exclamation point (!) and end with a semicolon (;) <br>
+LINGO does not distinguish between uppercase and lowercase in variable names. <br>
+variable names in LINGO, must begin with an alphabetic character (A- Z). Subsequent characters may be either alphabetic, numeric (0-9), or the underscore (_). <br>
+Names may be up to 64 characters in length. <br>
+If your model does not have any nonlinear constraints, then any locally optimal solution will also be a global optimum. <br>
+If your model has one or more nonlinear constraints, then any locally optimal solution may not be the best solution to your model. <br>
+it is always preferred to formulate a model using only linear constraints whenever possible.  <br>
+The Infeasibility field lists the amount that all the constraints in the model are violated by. It does not track the amount of any violations on variable bounds. <br>
+It is possible for the Infeasibility field to be zero while the current solution is infeasible due to violated variable bounds. <br>
+The .LG4 file format is a binary RTF file format. <br>
+Reduced cost:  the amount that the objective coefficient of the variable would have to improve before it would become profitable to give the variable in question a positive value in the optimal solution.<br>
+Chp 2. Using sets<br>
+#lingo ##application <br>
+primary set definition: <br>
+`setname [/ member_list /] [: attribute_list];`<br>
+secondary set definition: <br>
+`setname (parent_set_list) [/ member_list /] [: attribute_list];`<br>
+Chp 4. The DATA section of a model<br>
+#lingo ##application <br>
+There can be no more than one set name in object_list, while there may be any number of attributes. <br>
+Chp 6. Command Line Commands<br>
+#lingo ##application #lingo ##keywords<br>
+there is a command window accessible from the lingo GUI. It is used for writing and execute command scripts.<br>
+`TAKE`: runs a command script from an external file<br>
+`DIVERT`: opens a file for receiving output<br>
+`RVRT`: closes a file previously opened with DlVERT<br>
+`SAVE`: saves the current model to disk<br>
+`DEBUG`: tracks down formulation errors in infeasible and unbounded models<br>
+`GO`: Runs the current model<br>
+`ALTER` : edits the contents of the model<br>
+`DELETE`: deletes a selected row of the model<br>
+`TERSE`: output level<br>
+`!` for comment<br>
+`QUIT`: closes LINGO<br>
+Chp. 8. Interfacing with external files<br>
+#lingo ##application <br>
+`@FILE` imports data from external text files  anywhere in the model. syntax:`@FILE(‘filename’)`<br>
+LINGO takes text from this file until it encounters either the end-of-file mark or a LINGO end-of-record mark `~`. <br>
+subsequent `@FILE` references in the same model with the same file name, make LINGO to resume taking text at the point where it left off.      <br>
+LINGO Command Scripts<br>
+#lingo ##terms #lingo ##application <br>
+A LINGO command script is any text file containing a series of LINGO commands. You can think of these commands as a macro language that allows you to automate the running of frequently used commands and/or models.<br>
+To run a command script in Windows versions of LINGO, use the File|Take Commands command<br>
+`SET TERSEO`: control the amount of output LINGO generates. There are four settings available:<br>
+<ol type="1" start="1">
+<li>`TERSEO 1`: Verbose—Causes LINGO to display the maximum amount of output, including full solution reports.</li>
+<li>`TERSEO 2`: Terse—Less output than Verbose, with full solution reports suppressed. This is a good output level if you tend to solve large models. LINGO also suppresses Export Summary Reports generated when exporting data to spreadsheets or databases.</li>
+<li>`TERSEO 3`: Errors Only—All output is suppressed, with the exception of error messages</li>
+<li>`TERSEO 4`: Nothing—LINGO suppresses all output. This level may be useful when taking advantage of the programming capabilities in LINGO, in which case, you will add statements to your model to generate all required output.</li>
+<li>The default setting for TERSEO is 1, or verbose mode.</li>
+</ol>
+`ECHOIN` When you run a LINGO command script with the TAKE command, the commands LINGO processes are normally not displayed. If you would like the commands echoed to your screen, set the ECHOIN parameter to 1. This can be a useful feature when you are trying to develop and debug a LINGO command script<br>
+`RunLingo` : Windows and Linux versions of LINGO include a utility program called RunLingo. RunLingo can be used to process LINGO script files, however, RunLingo does not include the front-end graphical interface found in the interactive version of LINGO. RunLingo is invoked from the command line, where you may enter a script file name. <br>
+command scripts are generally stored as `LTF` files.
+</p>
+
+                            <br><br>
+		            </div>
+				<!--  -->
+            </div>
+            <br>
+            <div class="visualClear"><span></span></div>
+
+    <!--  -->
+		<!--  -->
+		<!--  -->
+	<!--  -->
+
+        </div>
+        <div id="disqus_thread"><span></span></div>
+
+    </div>
+    <div id="mw-navigation">
+        <h2>Navigation menu</h2>
+        <div id="mw-head">
+            <div id="left-navigation">
+                <div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+                    <h3 id="p-namespaces-label">Namespaces</h3>
+                    <ul>
+                        <li id="ca-nstab-main" class="selected"><span>{SITE_TITLE}</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="right-navigation">
+                <div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+                    <h3 id="p-views-label">Views</h3>
+                    <ul>
+                        <!-- <li id="ca-view" class="selected"><span>Read</span></li> -->
+                        <!--  -->
+                        <!-- <li id="ca-edit"><span><a href="#disqus_thread">Comment</a></span></li> -->
+                        <!--  -->
+                        <!--<li id="ca-history"><span>View history</span></li>-->
+                        <div id="p-search" role="search">
+                            <form action="https://www.google.com/search" method="GET" name="searchForm" id="searchForm" enctype="application/x-www-form-urlencoded" >
+
+							<div id="simpleSearch">
+							<input name="sitesearch" value="grimdorlf.github.io" type="hidden">
+                            <input id="searchInput" name="q" results="0" placeholder="Search {SITE_TITLE}..." title="Search {SITE_TITLE}..." tabindex="1" autocomplete="off" type="search">
+                            <input id="searchButton" name="go" value="Go" title="Go to a page with this exact name if it exists" class="searchButton" type="submit">
+							</div>
+
+							<div class="suggestions"><div class="suggestions-results"><span></span></div></div>
+                            </form>
+					    </div>
+
+                    </ul>
+                </div>
+                <div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+                    <h3 tabindex="0" id="p-cactions-label"><span>Actions</span><a tabindex="-1" href="#"></a></h3>
+                    <div class="menu">
+                        <ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="collapsible-nav" id="mw-panel">
+            <div id="p-logo" role="banner">
+                <a style="background-image: url(./_resources/logo.png); background-size: contain;" href="./grimdorlf.github.io/About.html" title="Visit the main page"><span></span></a>
+            </div>
+            <div class="portal first persistent" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+                <h3 id="p-navigation-label">Navigation</h3>
+                <div class="body">
+                    <ul>
+                        <!-- <li ><a href="./grimdorlf.github.io/index.html">Main page</a></li> -->
+                        <!-- <li ><a href="./grimdorlf.github.io/How_To.html">How To</a></li> -->
+                        <!-- <li ><a href="./grimdorlf.github.io/Troubleshooting.html">Troubleshoting</a></li> -->
+                        <!-- <li ><a href="./grimdorlf.github.io/Technical_Notes.html">Technical Notes</a></li> -->
+                        <!-- <li ><a href="./grimdorlf.github.io/Tools_and_Scripts.html">Tools and Scripts</a></li> -->
+						<ul>
+<li><a href="./Biblio_organizers.html" title="Biblio organizers" class="page">Biblio organizers</a></li>
+<li><a href="./Cloud_computing.html" title="Cloud computing" class="page">Cloud computing</a></li>
+<li><a href="./Code_editors.html" title="Code editors" class="page">Code editors</a></li>
+<li><a href="./Dynalist.html" title="Dynalist" class="page">Dynalist</a></li>
+<li><a href="./EES.html" title="EES" class="page">EES</a></li>
+<li><a href="./Energy+.html" title="Energy+" class="page">Energy+</a></li>
+<li><a href="./epub_books.html" title="epub books" class="page">epub books</a></li>
+<li><a href="./Excel.html" title="Excel" class="page">Excel</a></li>
+<li><a href="./Git.html" title="Git" class="page">Git</a></li>
+<li><a href="./Gurobi.html" title="Gurobi" class="page">Gurobi</a></li>
+<li><a href="./Hysys.html" title="Hysys" class="page">Hysys</a></li>
+<li><a href="./Jupyter_notebooks.html" title="Jupyter notebooks" class="page">Jupyter notebooks</a></li>
+<li><a href="./LaTeX.html" title="LaTeX" class="page">LaTeX</a></li>
+<li><b>LINGO</b></li>
+<li><a href="./Note_Apps.html" title="Note Apps" class="page">Note Apps</a></li>
+<li><a href="./Optimizers.html" title="Optimizers" class="page">Optimizers</a></li>
+<li><a href="./Podcast_Apps.html" title="Podcast Apps" class="page">Podcast Apps</a></li>
+<li><a href="./Pyomo.html" title="Pyomo" class="page">Pyomo</a></li>
+<li><a href="./Python.html" title="Python" class="page">Python</a></li>
+<li><a href="./Visual_Studio_2017.html" title="Visual Studio 2017" class="page">Visual Studio 2017</a></li>
+<li><a href="./Zim_notes.html" title="Zim notes" class="page">Zim notes</a></li>
+<li><a href="./Zotero.html" title="Zotero" class="page">Zotero</a></li>
+</ul>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="portal">
+            	<div style="display: block;" class="body">
+            		<ul id="p-tb-list">
+                        <li><a href="./grimdorlf.github.io/index.html" title="Index">Index</a></li>
+                        <li><a href="./grimdorlf.github.io/About.html" title="About">About</a></li>
+                        <!-- <li><a href="./grimdorlf.github.io/Contact_Info.html" title="Contact Info">Contact Info</a></li> -->
+            		</ul>
+            	</div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" role="contentinfo">
+        <ul id="footer-places">
+            <li id="footer-places-about"><a href="./grimdorlf.github.io/About.html" title="About">About {SITE_TITLE}</a></li>
+            <!-- <li id="footer-places-disclaimer"><a href="./grimdorlf.github.io/General_disclaimer.html" title="General disclaimer">Disclaimers</a></li> -->
+            <li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by/3.0/">Attribution 3.0 Unported</a> unless otherwise noted.</li>
+        </ul>
+		<ul id="footer-icons" class="noprint">
+				<li id="footer-copyrightico">
+					<a href="http://creativecommons.org/licenses/by/3.0/"><img src="./_resources/ccby_88x31.png" alt="Attribution 3.0 Unported" height="31" width="88"></a>
+			</li>
+		</ul>
+    </div>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">top</button>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '{GOOGLE_ANALYTICS_ID}', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script>
+//Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+<script>
+$(document).ready(function () {
+    'use strict';
+    /* Set up search */
+    $.getJSON('/searchIndex.json', function (response) {
+	    var index, store;
+        // Create index
+        index = lunr.Index.load(response.index);
+        // Create store
+        store = response.store;
+        // Handle search
+        $('input#searchInput').on('keyup', function () {
+            // Get query
+            var query = $(this).val();
+            // Search for it
+            var resultdiv = $('div.suggestions');
+            if(query === ''){
+                /*resultdiv.empty();*/
+                resultdiv.hide();
+            }
+            else {
+                var result = index.search(query);
+                // Output it
+                if (result.length === 0) {
+                    // Hide results
+                    resultdiv.hide();
+                } else {
+                    // Show results
+                    var subresultdiv=$('div.suggestions-results')
+                    subresultdiv.empty();
+                    for (var item in result) {
+                        var ref = result[item].ref;
+                        var searchitem = '<a class="mw-searchSuggest-link" href="' + ref + '"><div class="suggestions-result">' + store[ref].title + '</div></a>';
+                        subresultdiv.append(searchitem);
+                    }
+                    resultdiv.show();
+                }
+            }
+        });
+    });
+	tocbot.init({
+  		tocSelector: '.js-toc',
+  		contentSelector: '.js-toc-content',
+  		headingSelector: 'h2',
+	});
+});
+/* autohide search box */
+$(document).mouseup(function(e) {
+    var container = $("div.suggestions");
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+        container.hide();
+    }
+    var searchbox = $('div#p-search');
+    if (searchbox.is(e.target) || searchbox.has(e.target).length !== 0) {
+        container.show();
+    }
+});
+
+/*  disqus */
+var disqus_config = function () {
+	this.page.url = "http://grimdorlf.github.io/LINGO.html-1";
+	this.page.identifier = "LINGO-1";
+};
+
+(function() { var d = document, s = d.createElement('script'); s.src = 'https://{DISQUS_URL}/embed.js'; s.setAttribute('data-timestamp', +new Date()); (d.head || d.body).appendChild(s); })();
+
+</script>
+<noscript>Please enable JavaScript to get search, toc, comments and other stuff.</noscript>
+</body>
+</html>

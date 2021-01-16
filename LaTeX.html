@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html dir="ltr" class="client-js" lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>LaTeX</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+	<meta name="theme-color" content="#ffffff">
+    <link rel="copyright" href="http://creativecommons.org/licenses/by/3.0/">
+    <link rel="stylesheet" href="./_resources/wikdorlf.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/3.0.2/tocbot.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/3.0.2/tocbot.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.1/lunr.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/languages/dos.min.js"></script>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/github.min.css">
+
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 skin-vector action-view vector-animateLayout">
+    <div id="mw-page-base" class="noprint"><span></span></div>
+    <div id="mw-head-base" class="noprint"><span></span></div>
+    <div id="content" class="mw-body" role="main">
+        <a id="top"></a>
+        <div id="mw-js-message" style="display:none;"></div>
+        <h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">
+		LaTeX
+		</span></h1>
+        <div id="bodyContent">
+            <div id="mw-content-text" dir="ltr" class="mw-content-ltr" lang="en">
+				<!--  -->
+                          <div class="js-toc"><span></span></div>
+                          <div class="js-toc-content">
+                          <!-- using content splitup instead of the whole page.content to add id to headers for the TOC to work -->
+                          <!-- these IDs are for TOC and they are lame but they work. ideally zim would provide a random function -->
+								<!-- <h1 id="6213">LaTeX</h1> -->
+								
+								
+                            	<p>
+Created Monday 20 August 2018
+</p>
+
+
+								<!--  -->
+								<h2 id="930248">Usage</h2>
+								
+                            	<p>
+<ul>
+<li>Classes archives and style archives must be placed in a local folder following the Tex Directory Structure (TDS) as explained <a href="https://docs.miktex.org/manual/localadditions.html" title="here" class="https">here</a>. </li>
+<li>In order to compile properly a <i>UFSCthesis</i> in TeXstudio, it is necessary to have (and update mikTeX) with the following archives (modified locally):
+<ul>
+<li><a href="https://dynalist.io/u/wv8K2-T5rsNlZs9Ko_Z0Cvws" title="abnt.cls" class="https">abnt.cls</a></li>
+<li><a href="https://dynalist.io/u/g2yOWwwPRYDt9oWSpb_eOkAB" title="BUUFSCthesis.sty0" class="https">BUUFSCthesis.sty0</a></li>
+<li><a href="https://dynalist.io/u/RKdPRDWGvcMRtUrq_2mia30S" title="ufsc-alf.bst" class="https">ufsc-alf.bst</a></li>
+<li><a href="https://dynalist.io/u/AeLkY2EIk78I56pzVzY6a2on" title="ufscThesis.cls" class="https">ufscThesis.cls</a></li>
+</ul></li>
+</ul>
+</p>
+
+
+								<!--  -->
+								
+								<h3 id="18923160">nomenclature package</h3>
+                            	<p>
+<ul>
+<li>include at the end of each paragraph lines like</li>
+</ul>
+</p>
+<div class="zim-object">
+<pre><code class="latex">\nomenclature[lk]{$K$}{Watson UOPK factor.}
+\nomenclature[lt]{$T$}{Temperature, °C.}
+\nomenclature[ls]{$SG$}{Specific gravity.}
+\nomenclature[sb]{b}{Boiling point.}
+\nomenclature[sa]{avg.}{Average.}
+\nomenclature[a]{TBP}{True Boiling Point.}
+</code></pre>
+</div>
+
+<p>
+<ul>
+<li>The syntax is <tt>\nomenclature[xy]{symbol}{meaning}</tt>, where <tt>x</tt> is the type of abbreviation: <tt>a</tt> for acronyms, <tt>l</tt> for Latin letters, <tt>g</tt> for greek letters, <tt>s</tt> for subscripts, <tt>u</tt> for superscripts, <tt>z</tt> for others. <tt>y</tt> is a character used for organization of the list in alphabetical order.</li>
+<li><tt>+</tt> symbol, separates the acronyms from the other subgroups in the index. </li>
+<li>For subgroups, the following code must be placed in the document header: </li>
+</ul>
+</p>
+<div class="zim-object">
+<pre><code class="latex">\renewcommand{\nomgroup}[1]{%
+	\ifthenelse{\equal{#1}{A}}{\item[\textbf{Acronyms}]}
+	{\ifthenelse{\equal{#1}{G}}{\item[\textbf{Greek Letters}]}{}}
+	{\ifthenelse{\equal{#1}{S}}{\item[\textbf{Subscripts}]}{}}
+	{\ifthenelse{\equal{#1}{U}}{\item[\textbf{Superscripts}]}{}}
+	{\ifthenelse{\equal{#1}{L}}{\item[\textbf{Latin Letters}]}{}}
+	{\ifthenelse{\equal{#1}{Z}}{\item[\textbf{Others}]}{}}
+</code></pre>
+</div>
+
+<p>
+<ul>
+<li>Once the <i>.tex</i> file is compiled, a <i>.nlo</i> file is generated in the same root folder. then you must run the following command in the <i>cmd</i> window, in order to generate a <i>.nls</i> file. </li>
+</ul>
+<div style='padding-left: 30pt'>
+<tt>makeindex ﬁlename.nlo -s nomencl.ist -o ﬁlename.nls</tt>
+</div>
+<ul>
+<li>Then you must compile again, in order to print the lists. </li>
+<li>Pages must be numbered.  </li>
+</ul>
+</p>
+
+
+								<!--  -->
+								
+								<h3 id="42533386">large documents</h3>
+                            	<p>
+<ul>
+<li>For large documents it is convenient to make a TEX file for each section/part of it. </li>
+<li>A header file can be used for preamble definition of each section</li>
+</ul>
+</p>
+<div class="zim-object">
+<pre><code class="latex">% Used Packages
+\usepackage{graphicx}	%used to import image files 
+\usepackage{bigstrut}	%let a bit of aditional space in table arrow
+\usepackage{multirow}	%let the insertion of combined rows in tables
+\usepackage{array}
+\usepackage{rotating}	%let to rotate the text of a cell in a table
+\usepackage[labelsep=endash]{caption} %defines - for hyphenation
+\usepackage{gensymb}	%used to write °C 
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{nomencl}	%used to generate list of symbols and acronyms
+\makenomenclature		%generates nomenclature nlo archive
+\RequirePackage{ifthen}
+%\renewcommand{\theequation}{\arabic{equation}} %se desejar tirar o capitulo
+\newcommand{\Methodpath}{./}
+%\usepackage[labelsep=period]{caption} % O separador de legenda é um 
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % 
+\begin{document}
+</code></pre>
+</div>
+
+<p>
+<ul>
+<li>a footer can be used to close the text</li>
+</ul>
+</p>
+<div class="zim-object">
+<pre><code class="latex">\bibliographystyle{ufsc-alf}
+\bibliography{Ref_method}
+\end{document}
+</code></pre>
+</div>
+
+<p>
+<ul>
+<li>Then, a main file put all the parts together (it also uses header and footer files).</li>
+</ul>
+</p>
+<div class="zim-object">
+<pre><code class="latex">\include{Main_header}
+\input{./01_Intro/Introduction.tex}
+\input{./02_Biblio/Biblio.tex}
+\input{./03_Method/Methodology.tex}
+\input{./04_Results/Results.tex}
+\input{./05_Conclusion/Conclusion.tex}
+
+\selectlanguage{brazil}
+\bibliographystyle{ufsc-alf}
+\bibliography{bibliografia}
+
+%--------------------------------------------------------
+% Elementos pós-textuais
+\selectlanguage{english}
+\appendix
+\input{./06.1_Model_nomencl/Model_nomencl.tex}
+\input{./06.2_Hysys_code/Hysys_code.tex}
+\input{./06.3_EES_code/EES_code.tex}
+\input{./06.4_Exg_balance/Exg_balance.tex}
+\input{./06.5_Oil_char/Oil_char.tex}
+</code></pre>
+</div>
+
+<p>
+<ul>
+<li>In order to reference figures, tables, bibiliogrphies, etc. it is necessary to define the relative file routes in the main header file.</li>
+</ul>
+</p>
+<div class="zim-object">
+<pre><code class="latex">\documentclass{ufscThesis} %type of document
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Used Packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{graphicx}	%used to import image files 
+\usepackage{bigstrut}	%let a bit of aditional space in table arrow
+\usepackage{multirow}	%let the insertion of combined rows in tables
+\usepackage{rotating}	%let to rotate the text of a cell in a table
+\usepackage[labelsep=endash]{caption} %defines - for hyphenation
+\usepackage{gensymb}	%used to write °C 
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{longtable}	%let multi page tables
+\usepackage{listings}	%used to incorporate code 
+\usepackage{array}
+\usepackage{float}	%used to fix figure position 
+\usepackage{nomencl}	%used to generate list of symbols and acronyms
+\makenomenclature		%generates nlo archive
+\RequirePackage{ifthen}
+\renewcommand{\nomname}{Acronyms}
+\renewcommand{\nomgroup}[1]{%
+\ifthenelse{\equal{#1}{A}}{\pretextualchapter{Nomenclature}\item[\textbf{Roman Letters}]}{%
+\ifthenelse{\equal{#1}{G}}{\item[\textbf{Greek Letters}]}{}}{\ifthenelse{\equal{#1}{S}}{\item[\textbf{Subscripts}]}{}}{\ifthenelse{\equal{#1}{U}}{\item[\textbf{Superscripts}]}{\ifthenelse{\equal{#1}{Z}}{\item[\textbf{Others}]}{}}}}		%generates nomenclature subgroups
+
+\newcommand{\V}[1]{\mbox{$ #1 $}}
+\newcommand{\spheading}[2][3.5cm]{% \spheading[&lt;width&gt;]{&lt;stuff&gt;}
+  \rotatebox{90}{\parbox{#1}{\raggedright #2}}}	%this command permits line break in vertical aligned cells
+
+\newcommand{\Intropath}{01_Intro/}
+\newcommand{\Bibliopath}{02_Biblio/}
+\newcommand{\Methodpath}{03_Method/}
+\newcommand{\Resultspath}{04_Results/}
+\newcommand{\Modelnomenclpath}{06.1_Model_nomencl/}
+\newcommand{\Exgbalancepath}{06.4_Exg_balance/}
+\newcommand{\EEScodepath}{06.3_EES_code/}
+\newcommand{\oilcharpath}{06.5_Oil_char/}
+\selectlanguage{brazil}
+\begin{document}
+
+</code></pre>
+</div>
+
+<br>
+
+
+								<!--  -->
+								<h2 id="3020">Commands</h2>
+								
+                            	
+								<!--  -->
+								
+								<h3 id="582327">insert equations</h3>
+                            	<div class="zim-object">
+<pre><code class="latex">\begin{equation}  \label{Eq:SG_i}
+{SGi}=\dfrac{\left[ Ti,b\right]0.333}{SGavg}
+ \end{equation}
+</code></pre>
+</div>
+
+<div class="zim-object">
+<pre><code class="latex">\begin{align}
+MW^0_i &amp;= \dfrac{Tb,i}{5.8-0.0052\cdot Tb,i}\nonumber\\
+SG^0_i &amp;= 0.843593-0.128624\cdot \alpha-3.36159\cdot \alpha^3 \nonumber\\&amp;\quad -13749.5\cdot \alpha12\nonumber \\
+T^0 &amp;= T_b \cdot\Big(0.533272+0.343838\cdot 10\cdot T\nonumber\\ &amp;\quad\left.+ 2.52617
+\end{align}
+</code></pre>
+</div>
+
+<br>
+
+
+								<!--  -->
+								
+								<h3 id="397338">insert figures</h3>
+                            	<div class="zim-object">
+<pre><code class="latex">\begin{figure} [ht]
+ \begin{center}
+ \includegraphics[scale=0.15]{\Methodpath/figures_m/fig_1m.jpg}
+ \caption{Determination of the normal boiling point (NBP) of each pseudocomponent.}
+ \label{fig:1m}
+ %figure taken from aspentech reference, append. B pag. B-9
+ \end{center}
+ \end{figure}
+</code></pre>
+</div>
+
+<br>
+
+
+								<!--  -->
+								
+								<h3 id="454333">insert tables</h3>
+                            	<div class="zim-object">
+<pre><code class="latex">\begin{table}[h]
+\begin{center}
+\caption{Exemplo de tabela}
+\begin{tabular}{c|c|c}
+\hline
+Propriedades do compósito &amp; CFRC-TWILL &amp; CFRC-4HS\\
+\hline
+Resistência à Flexão (MPa) &amp; 209$\pm$ 10 &amp; 180 $\pm$  15\\
+\hline
+Módulo de Flexão  (GPa) &amp; 57.0 $\pm$ 2.8 &amp; 18.0 $\pm$  1.3\\
+\hline
+\end{tabular}
+\end{center}
+\end{table}
+</code></pre>
+</div>
+
+<br>
+
+
+								<!--  -->
+								
+								<h3 id="408348">itemize</h3>
+                            	<div class="zim-object">
+<pre><code class="latex">\begin{itemize}
+\item{Adaptability for water depth.}
+\item{Early deployment.}
+\item{These units are self-contained.}
+\item{These units are movable and relocatable.}
+\item{Can be combined with other offshore facilities.}
+\item{Their use can expand oil trading.}
+\item{Has segregated storage.}
+\end{itemize}
+</code></pre>
+</div>
+
+<br>
+
+
+								<!--  -->
+								
+								<h3 id="382315">tabbing</h3>
+                            	<div class="zim-object">
+<pre><code class="latex">\begin{tabbing}
+	$SGi$:\hspace{6pt} \= Specific gravity of pseudocomponent i (${60\,\circ{\rm F}}/{60\,\circ{\rm F}}$).\\ 
+	$Tb,i$:\&gt;  Normal boiling point of pseudocomponent i.\\ 
+	$SGavg$:\&gt; Bulk specific gravity  (${60\,\circ{\rm F}}/{60\,\circ{\rm F}}$).
+ \end{tabbing}
+</code></pre>
+</div>
+
+<br>
+
+
+								<!--  -->
+								
+								<h3 id="278319">brackets</h3>
+                            	<p>
+<ul>
+<li>unpaired <tt>\left(</tt> and <tt>\right)</tt> on any single line is not compiled. You can get round this with a <tt>\left.</tt> or a <tt>\right.</tt> at the beginning or end of each line where there is an unpaired bracket.</li>
+</ul>
+</p>
+
+
+								<!--  -->
+								<h2 id="1129283">Macros</h2>
+								
+                            	<p>
+<ul>
+<li>The sintaxis of new commands has the following estructure: <tt>\newcommand{name}[num]{definition}</tt>, for example</li>
+</ul>
+</p>
+<div class="zim-object">
+<pre><code class="latex">\newcommand{\wbalsup}[1] { This is the Wikibook about LaTeX supported by #1} 
+\newcommand{\wbalTwo}[2] { This is the Wikibook about LaTeX supported by #1 and #2} 
+
+% in the document body: 
+\begin{itemize} 
+    \item \wbalsup{Wikimedia} 
+    \item \wbalsup{lots of users!} 
+    \item \wbalTwo{John Doe}{Anthea} 
+\end{itemize}
+</code></pre>
+</div>
+
+<p>
+The output will be 
+</p>
+<pre>
+This is the Wikibook about LaTeX supported by Wikimedia 
+This is the Wikibook about LaTeX supported by lots of users! 
+This is the Wikibook about LaTeX supported by John Doe and Anthea
+</pre>
+
+<br>
+
+<p>
+<ul>
+<li>Use <tt>\newcommand*</tt> (permits the iclusion of commands in the arguments) and the command <tt>\def</tt> to get the user inputs: </li>
+</ul>
+</p>
+<div class="zim-object">
+<pre><code class="latex">\newcommand*{\ResCountry}[1]{\def\@Rescountry{#1}}         %Defines the Residence country
+</code></pre>
+</div>
+
+<br>
+
+
+								<!--  -->
+								
+								<h3 id="283323">conditionals</h3>
+                            	<div class="zim-object">
+<pre><code class="latex">`\usepackage{ifthen}
+% ...
+* \ifthenelse{[Condition]} {[if true]} {[if false]}`
+</code></pre>
+</div>
+
+<p>
+example :<br>
+ <tt>\ifthenelse{ \equal{\myvar}{true}} {This is true.} {This is false.}</tt>
+</p>
+
+
+								<!--  -->
+								<h2 id="18052135">Document differences via Latexdiff script</h2>
+								
+                            	<p>
+<a href="http://techshangrila.blogspot.com/2013/10/installing-latexdiff-of-windows.html" title="http://techshangrila.blogspot.com/2013/10/installing-latexdiff-of-windows.html" class="http">http://techshangrila.blogspot.com/2013/10/installing-latexdiff-of-windows.html</a><br>
+Prerequisite: Miktex (<a href="http://miktex.org/2.9/setup" title="http://miktex.org/2.9/setup" class="http">http://miktex.org/2.9/setup</a>)<br>
+Prerequisite: Perl (can use Strawberry Perl: <a href="http://strawberryperl.com/releases.html" title="http://strawberryperl.com/releases.html" class="http">http://strawberryperl.com/releases.html</a>)<br>
+Assume Miktex and Perl Interpreter are installed, and Miktex is installed in "C:\Program Files (x86)\MiKTeX 2.9\" (Other directory is fine, just adapt accordingly)<br>
+Go to  "C:\Program Files (x86)\MiKTeX 2.9\scripts\latexdiff\"<br>
+Create a a new folder "perl" in "C:\Program Files (x86)\MiKTeX 2.9\scripts\latexdiff\"<br>
+Copy all files in "C:\Program Files (x86)\MiKTeX 2.9\scripts\latexdiff\" to new folder "C:\Program Files (x86)\MiKTeX 2.9\scripts\latexdiff\perl"<br>
+Rename all files (without extension) in "C:\Program Files (x86)\MiKTeX 2.9\scripts\latexdiff\perl", with an extension .ple.g., latexdiff to latexdiff.pl<br>
+Add "C:\Program Files (x86)\MiKTeX 2.9\scripts\latexdiff\perl" to the PATH environment (if you are not sure how to do so, see [here](<a href="http://www.java.com/en/download/help/path.xml" title="http://www.java.com/en/download/help/path.xml" class="http">http://www.java.com/en/download/help/path.xml</a>))<br>
+Open Command Prompt, and type in<br>
+latexdiff.pl --flatten PreviousFile CurrentFile&gt; diffe.g., latexdiff.pl --flatten "C:\old.tex" "C:\new.tex" &gt; "C:\Diff.tex"
+</p>
+
+                            <br><br>
+		            </div>
+				<!--  -->
+            </div>
+            <br>
+            <div class="visualClear"><span></span></div>
+
+    <!--  -->
+		<!--  -->
+		<!--  -->
+	<!--  -->
+
+        </div>
+        <div id="disqus_thread"><span></span></div>
+
+    </div>
+    <div id="mw-navigation">
+        <h2>Navigation menu</h2>
+        <div id="mw-head">
+            <div id="left-navigation">
+                <div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+                    <h3 id="p-namespaces-label">Namespaces</h3>
+                    <ul>
+                        <li id="ca-nstab-main" class="selected"><span>{SITE_TITLE}</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="right-navigation">
+                <div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+                    <h3 id="p-views-label">Views</h3>
+                    <ul>
+                        <!-- <li id="ca-view" class="selected"><span>Read</span></li> -->
+                        <!--  -->
+                        <!-- <li id="ca-edit"><span><a href="#disqus_thread">Comment</a></span></li> -->
+                        <!--  -->
+                        <!--<li id="ca-history"><span>View history</span></li>-->
+                        <div id="p-search" role="search">
+                            <form action="https://www.google.com/search" method="GET" name="searchForm" id="searchForm" enctype="application/x-www-form-urlencoded" >
+
+							<div id="simpleSearch">
+							<input name="sitesearch" value="grimdorlf.github.io" type="hidden">
+                            <input id="searchInput" name="q" results="0" placeholder="Search {SITE_TITLE}..." title="Search {SITE_TITLE}..." tabindex="1" autocomplete="off" type="search">
+                            <input id="searchButton" name="go" value="Go" title="Go to a page with this exact name if it exists" class="searchButton" type="submit">
+							</div>
+
+							<div class="suggestions"><div class="suggestions-results"><span></span></div></div>
+                            </form>
+					    </div>
+
+                    </ul>
+                </div>
+                <div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+                    <h3 tabindex="0" id="p-cactions-label"><span>Actions</span><a tabindex="-1" href="#"></a></h3>
+                    <div class="menu">
+                        <ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="collapsible-nav" id="mw-panel">
+            <div id="p-logo" role="banner">
+                <a style="background-image: url(./_resources/logo.png); background-size: contain;" href="./grimdorlf.github.io/About.html" title="Visit the main page"><span></span></a>
+            </div>
+            <div class="portal first persistent" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+                <h3 id="p-navigation-label">Navigation</h3>
+                <div class="body">
+                    <ul>
+                        <!-- <li ><a href="./grimdorlf.github.io/index.html">Main page</a></li> -->
+                        <!-- <li ><a href="./grimdorlf.github.io/How_To.html">How To</a></li> -->
+                        <!-- <li ><a href="./grimdorlf.github.io/Troubleshooting.html">Troubleshoting</a></li> -->
+                        <!-- <li ><a href="./grimdorlf.github.io/Technical_Notes.html">Technical Notes</a></li> -->
+                        <!-- <li ><a href="./grimdorlf.github.io/Tools_and_Scripts.html">Tools and Scripts</a></li> -->
+						<ul>
+<li><a href="./Biblio_organizers.html" title="Biblio organizers" class="page">Biblio organizers</a></li>
+<li><a href="./Cloud_computing.html" title="Cloud computing" class="page">Cloud computing</a></li>
+<li><a href="./Code_editors.html" title="Code editors" class="page">Code editors</a></li>
+<li><a href="./Dynalist.html" title="Dynalist" class="page">Dynalist</a></li>
+<li><a href="./EES.html" title="EES" class="page">EES</a></li>
+<li><a href="./Energy+.html" title="Energy+" class="page">Energy+</a></li>
+<li><a href="./epub_books.html" title="epub books" class="page">epub books</a></li>
+<li><a href="./Excel.html" title="Excel" class="page">Excel</a></li>
+<li><a href="./Git.html" title="Git" class="page">Git</a></li>
+<li><a href="./Gurobi.html" title="Gurobi" class="page">Gurobi</a></li>
+<li><a href="./Hysys.html" title="Hysys" class="page">Hysys</a></li>
+<li><a href="./Jupyter_notebooks.html" title="Jupyter notebooks" class="page">Jupyter notebooks</a></li>
+<li><b>LaTeX</b></li>
+<li><a href="./LINGO.html" title="LINGO" class="page">LINGO</a></li>
+<li><a href="./Note_Apps.html" title="Note Apps" class="page">Note Apps</a></li>
+<li><a href="./Optimizers.html" title="Optimizers" class="page">Optimizers</a></li>
+<li><a href="./Podcast_Apps.html" title="Podcast Apps" class="page">Podcast Apps</a></li>
+<li><a href="./Pyomo.html" title="Pyomo" class="page">Pyomo</a></li>
+<li><a href="./Python.html" title="Python" class="page">Python</a></li>
+<li><a href="./Visual_Studio_2017.html" title="Visual Studio 2017" class="page">Visual Studio 2017</a></li>
+<li><a href="./Zim_notes.html" title="Zim notes" class="page">Zim notes</a></li>
+<li><a href="./Zotero.html" title="Zotero" class="page">Zotero</a></li>
+</ul>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="portal">
+            	<div style="display: block;" class="body">
+            		<ul id="p-tb-list">
+                        <li><a href="./grimdorlf.github.io/index.html" title="Index">Index</a></li>
+                        <li><a href="./grimdorlf.github.io/About.html" title="About">About</a></li>
+                        <!-- <li><a href="./grimdorlf.github.io/Contact_Info.html" title="Contact Info">Contact Info</a></li> -->
+            		</ul>
+            	</div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" role="contentinfo">
+        <ul id="footer-places">
+            <li id="footer-places-about"><a href="./grimdorlf.github.io/About.html" title="About">About {SITE_TITLE}</a></li>
+            <!-- <li id="footer-places-disclaimer"><a href="./grimdorlf.github.io/General_disclaimer.html" title="General disclaimer">Disclaimers</a></li> -->
+            <li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by/3.0/">Attribution 3.0 Unported</a> unless otherwise noted.</li>
+        </ul>
+		<ul id="footer-icons" class="noprint">
+				<li id="footer-copyrightico">
+					<a href="http://creativecommons.org/licenses/by/3.0/"><img src="./_resources/ccby_88x31.png" alt="Attribution 3.0 Unported" height="31" width="88"></a>
+			</li>
+		</ul>
+    </div>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">top</button>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', '{GOOGLE_ANALYTICS_ID}', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<script>
+//Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+<script>
+$(document).ready(function () {
+    'use strict';
+    /* Set up search */
+    $.getJSON('/searchIndex.json', function (response) {
+	    var index, store;
+        // Create index
+        index = lunr.Index.load(response.index);
+        // Create store
+        store = response.store;
+        // Handle search
+        $('input#searchInput').on('keyup', function () {
+            // Get query
+            var query = $(this).val();
+            // Search for it
+            var resultdiv = $('div.suggestions');
+            if(query === ''){
+                /*resultdiv.empty();*/
+                resultdiv.hide();
+            }
+            else {
+                var result = index.search(query);
+                // Output it
+                if (result.length === 0) {
+                    // Hide results
+                    resultdiv.hide();
+                } else {
+                    // Show results
+                    var subresultdiv=$('div.suggestions-results')
+                    subresultdiv.empty();
+                    for (var item in result) {
+                        var ref = result[item].ref;
+                        var searchitem = '<a class="mw-searchSuggest-link" href="' + ref + '"><div class="suggestions-result">' + store[ref].title + '</div></a>';
+                        subresultdiv.append(searchitem);
+                    }
+                    resultdiv.show();
+                }
+            }
+        });
+    });
+	tocbot.init({
+  		tocSelector: '.js-toc',
+  		contentSelector: '.js-toc-content',
+  		headingSelector: 'h2',
+	});
+});
+/* autohide search box */
+$(document).mouseup(function(e) {
+    var container = $("div.suggestions");
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+        container.hide();
+    }
+    var searchbox = $('div#p-search');
+    if (searchbox.is(e.target) || searchbox.has(e.target).length !== 0) {
+        container.show();
+    }
+});
+
+/*  disqus */
+var disqus_config = function () {
+	this.page.url = "http://grimdorlf.github.io/LaTeX.html-1";
+	this.page.identifier = "LaTeX-1";
+};
+
+(function() { var d = document, s = d.createElement('script'); s.src = 'https://{DISQUS_URL}/embed.js'; s.setAttribute('data-timestamp', +new Date()); (d.head || d.body).appendChild(s); })();
+
+</script>
+<noscript>Please enable JavaScript to get search, toc, comments and other stuff.</noscript>
+</body>
+</html>
