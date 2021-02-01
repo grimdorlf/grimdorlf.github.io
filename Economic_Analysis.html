@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html dir="ltr" class="client-js" lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>Economic Analysis</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+	<meta name="theme-color" content="#ffffff">
+    <link rel="copyright" href="http://creativecommons.org/licenses/by/3.0/">
+    <link rel="stylesheet" href="wikdorlf.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/3.0.2/tocbot.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/3.0.2/tocbot.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.1/lunr.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/languages/dos.min.js"></script>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/github.min.css">
+
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 skin-vector action-view vector-animateLayout">
+    <div id="mw-page-base" class="noprint"><span></span></div>
+    <div id="mw-head-base" class="noprint"><span></span></div>
+    <div id="content" class="mw-body" role="main">
+        <a id="top"></a>
+        <div id="mw-js-message" style="display:none;"></div>
+        <h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">
+		Economic Analysis
+		</span></h1>
+        <div id="bodyContent">
+            <div id="mw-content-text" dir="ltr" class="mw-content-ltr" lang="en">
+				  <div class="js-toc"><span></span></div>
+				  <div class="js-toc-content">
+				  <!-- using content splitup instead of the whole page.content to add id to headers for the TOC to work -->
+				  <!-- these IDs are for TOC and they are lame but they work. ideally zim would provide a random function -->
+						<!-- <h1 id="16261118">Economic Analysis</h1> -->
+						
+						
+						<p>
+Created Sunday 25 May 2014<br>
+<i>(Based Mainly on</i> <a href="./Economic_Analysis/Bejan, Tsatsaronis, Moran, Thermal design and optimization, 1996.pdf" title="Bejan,1996" class="file">Bejan,1996</a> <i>cph. 7</i>)  
+</p>
+
+<p>
+<ul>
+<li>In a general way, an economic comprises various tasks as 
+<ol type="a" start="1">
+<li>Estimating capital investment costs</li>
+<li>Calculating  the main product costs under realistic assumptions for inflation, cost escalation, cost levelization, depreciation, taxes, and plant financing.</li>
+<li>Evaluating the profitability of alternative investments.</li>
+</ol>
+</li>
+<li>The <i>cost </i>is the amount of money paid to acquire or produce an item. </li>
+<li>The <i>market price</i> is affected <i>not only</i> by the production cost and the desired <i>profit</i> of an item, also by other factors as demand, supply, competition, regulation and subsidies.</li>
+<li>The total cost comprises the <i>fixed</i> and <i>variable costs</i>.</li>
+<li>Cost estimation is useful in all the design stages for decision making. But it is common to make an economic analysis once the  </li>
+</ul>
+flow sheet and equipment were specified.<br>
+<ul>
+<li>There is an approach called <i>revenue requirement method, </i>which is formed by 4 main steps:
+<ol type="a" start="1">
+<li>Estimate the total capital investment.</li>
+<li>Determine the economic, financial, operating and market input parameters for the detailed cost calculation.</li>
+<li>Calculate the total <i>revenue</i> requirement. </li>
+<li>calculate the levelized product cost.</li>
+</ol></li>
+</ul>
+</p>
+
+
+						<!--  -->
+						<h2 id="399225">Total Capital  Investments</h2>
+						
+						<p>
+<ul>
+<li>An investment cost is an one-time cost.</li>
+<li>Cost estimates for FCI (Fixed Capital Investment) comprises the <i>direct</i> and <i>indirect</i> costs.</li>
+<li>Other outlays (apart from FCI) can be startup costs, working capital, licensing costs, research and development, and allowance for funds used during construction.</li>
+</ul>
+</p>
+
+
+						<!--  -->
+						
+						<h3 id="51653402">Cost Estimates for Purchased Equipment</h3>
+						<p>
+<ul>
+<li>Is the first step in a detailed cost estimation.</li>
+<li>Includes spare parts and components.</li>
+<li>The best estimates are through vendor's quotations.</li>
+<li>Shipping and installation treated separately.</li>
+<li>For large projects, quotations must be obtained at least for most expensive equipments.</li>
+<li>The next best source are past purchase orders, quotations from cost estimators or calculations from proprietary databases.</li>
+<li>Some software packages can assist the estimation, but may not necessarily be better than the data from charts.</li>
+</ul>
+</p>
+
+<h4>Estimating Charts</h4>
+
+<br>
+
+<p>
+<ul>
+<li>Generally gives a purchased-equipment base cost <img src="./Economic_Analysis/equation.png"></li>
+</ul>
+, which corresponds to the item fabricated from most common material and designed to operate at some typical range of pressure and temperature.<br>
+<ul>
+<li>This base cost is given for an specific design type of equipment (per chart).</li>
+<li>Generally presents (or by separate plots) the effects of other equipment features (as design, material, temperature,pressure and others) through correction factors</li>
+<li>In addition of these factors, the <i>bare module factors</i> <img src="./Economic_Analysis/equation001.png"></li>
+</ul>
+ can be applied. The bare module factor times the total base costs of equipment within the module gives the sum of the direct and indirect costs of that module (including supports and connections within it).<br>
+<ul>
+<li>Depending on the type of estimating chart used, the use of these factors can be as follows:</li>
+</ul>
+</p>
+
+<p>
+<img src="./Economic_Analysis/equation002.png">   or   <img src="./Economic_Analysis/equation003.png">
+</p>
+
+<p>
+where the underlined quantities represents the purchased costs <img src="./Economic_Analysis/equation004.png"> for the equipment.
+</p>
+
+<p>
+<ul>
+<li>the accuracy is often relatively poor. Though often lacking in accuracy, charts are useful for preliminary cost estimates.</li>
+<li>The cost reported in the literature occasionally includes the installation costs. if no additional data is provided, <img src="./Economic_Analysis/equation004.png"></li>
+</ul>
+ can be estimated dividing the total cost by <b>1.45</b>.<br>
+<ul>
+<li>An alternative is the use of tables with the component unit cost together with an appropriate <i>scaling exponent</i> <img src="./Economic_Analysis/equation005.png"></li>
+</ul>
+ and  <img src="./Economic_Analysis/equation001.png">.<br>
+<ul>
+<li>The scaling exponent permits the calculation of purchase costs of an equipment <img src="./Economic_Analysis/equation007.png"></li>
+</ul>
+with size represented by variable <img src="./Economic_Analysis/equation006.png"> when the purchase cost of the same equipment  <img src="./Economic_Analysis/equation007.png">  with a capacity or size  <img src="./Economic_Analysis/equation008.png"> is known using the following relation:
+</p>
+
+<p>
+<div style='padding-left: 210pt'>
+<img src="./Economic_Analysis/equation009.png">
+</div>
+<ul>
+<li>in absence of information a scaling factor of <b>0.6</b> can be applied (<i>six-tenths rule</i>).</li>
+</ul>
+</p>
+
+<h4>Cost indices</h4>
+
+<br>
+
+<p>
+<ul>
+<li>For cost data based on conditions at different time, a <i>Cost Index</i> (CI) is used to adjust the cost info according to the year used as basis (BY) for the estimation, given a cost at different year (Y0).</li>
+</ul>
+<div style='padding-left: 90pt'>
+ <img src="./Economic_Analysis/equation010.png">
+</div>
+<ul>
+<li>Available CIs include:
+<ol type="1" start="1">
+<li>Chemical Engineering Cost Index. published in <i>Chemical Engineering Magazine</i>. Accessible through EBSCO (after SINAB Login - see Web Sources).</li>
+<li>Marshall and Swift Cost Index. published in the <i>Oil and Gas Journal</i>.</li>
+<li>Nelson-Farrar Refinery Cost Index. </li>
+<li>Engineering News Record (ENR). published in the <i>Engineering News Record Magazine</i>.</li>
+<li>U.S Boreau of Labor statistics. Published monthly in the <i>Monthly Labor Review</i>.</li>
+</ol></li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>For individual items, Marshall is recommended, while the chemical engineering CIs are recommended for total plants or groups of components.</li>
+<li>CIs applied to single components must be applied with caution when considering time intervals of <b>10 years or more</b>.</li>
+<li>CIs should not be applied to equipment to equipment for which the prices has been significantly affected by technology renewal or competition/regulation.</li>
+<li>However for large groups of equipment, CIs provide a reasonable estimate of average cost escalation with time. </li>
+<li>The cost analysis do no permit a decision of choice of a cogeneration system when costing of electricity or heat do not reflect their market value.</li>
+<li>For  an  investment  to  be  justified  the  economic  analysis  needs  to  include  an  assessment  of  the market value of the products in order to determine the potential sales revenue.</li>
+<li>Following the procedure by Montagnana(2014), the economic analysis can be based on common indicators as</li>
+</ul>
+</p>
+
+
+						<!--  -->
+						<h2 id="13522105">Definitions/Acronyms</h2>
+						
+						<p>
+<ul>
+<li><b>CI:</b> <i>Cost index</i>. Is an inflation indicator used to correct the costs of equipment, material, labor and supplies to the date of the estimate.  </li>
+<li><b>Direct costs:</b>	In a FCI are those costs of all permanent equipment, materials, labor and other resources involved in the fabrication, erection and installation of the permanent facilities.</li>
+<li><b>FCI:</b>	<i>Fixed Capital Investment</i>, represents the total system costs including the design and construction period.</li>
+<li><b>Fixed costs</b>: Do not depend strongly on the production rate (depreciation, taxes on facilities, insurance, maintenance, rent, etc.).</li>
+<li><b>Indirect costs: </b>In a FCI are those costs that do not become a permanent part of facilities.</li>
+<li><b>Off-site costs: </b>Costs  of the resources over the battery limits (imported or exported) as raw materials, utilities, distribution, roads, waste treatment, storage, offices, etc.</li>
+<li><b>On-site costs: </b>Costs of the <i>installed</i> equipment within the facilities, including supports and connections.</li>
+<li><b>TCI:</b>	<i>Total Capital Investment</i>, corresponds to the FCI plus other outlays.</li>
+<li><b>Variable costs: </b>Depends directly on production rate (Raw materials, labor, fuel, etc.).</li>
+</ul>
+</p>
+
+<br>
+
+
+						<!--  -->
+						<h2 id="660259">Translations</h2>
+						
+						<p>
+Allowance		Renta <br>
+Insurances		Seguros<br>
+Outlay			Desembolso<br>
+Profit	 		Ganancia<br>
+Revenue			Ingresos
+</p>
+
+<br>
+
+<p>
+<ul>
+<li>The cost analysis do no permit a decision of choice of a cogeneration system when costing of electricity or heat do not reflect their market value.</li>
+<li>For  an  investment  to  be  justified  the  economic  analysis  needs  to  include  an  assessment  of  the market value of the products in order to determine the potential sales revenue.</li>
+<li>Following the procedure by Montagnana(2014), the economic analysis can be based on common indicators as </li>
+<li>The </li>
+</ul>
+</p>
+
+					<br><br>
+				</div>
+            </div>
+            <br>
+            <div class="visualClear"><span></span></div>
+
+		<!--  -->
+			<!--  -->
+				<!-- <b>Attachments:</b> -->
+				<!-- <table> -->
+			<!--  -->
+				<!-- <tr><td><a href='./Economic_Analysis/BCS, Waste heat recovery technology and opportunities in U.S. Industry, 2008.pdf'>BCS, Waste heat recovery technology and opportunities in U.S. Industry, 2008.pdf</a></td><td>&nbsp;</td><td>4.90Mb</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Economic_Analysis/Bejan, Tsatsaronis, Moran, Thermal design and optimization, 1996.pdf'>Bejan, Tsatsaronis, Moran, Thermal design and optimization, 1996.pdf</a></td><td>&nbsp;</td><td>17.0Mb</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Economic_Analysis/ditaa.dia'>ditaa.dia</a></td><td>&nbsp;</td><td>3b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Economic_Analysis/ditaa001.dia'>ditaa001.dia</a></td><td>&nbsp;</td><td>2b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Economic_Analysis/equation.png'>equation.png</a></td><td>&nbsp;</td><td>347b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Economic_Analysis/equation.tex'>equation.tex</a></td><td>&nbsp;</td><td>16b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Economic_Analysis/equation001.png'>equation001.png</a></td><td>&nbsp;</td><td>395b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Economic_Analysis/equation001.tex'>equation001.tex</a></td><td>&nbsp;</td><td>19b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Economic_Analysis/equation002.png'>equation002.png</a></td><td>&nbsp;</td><td>740b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Economic_Analysis/equation002.tex'>equation002.tex</a></td><td>&nbsp;</td><td>37b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Economic_Analysis/equation003.png'>equation003.png</a></td><td>&nbsp;</td><td>1.02kb</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Economic_Analysis/equation003.tex'>equation003.tex</a></td><td>&nbsp;</td><td>81b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Economic_Analysis/equation004.png'>equation004.png</a></td><td>&nbsp;</td><td>298b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Economic_Analysis/equation004.tex'>equation004.tex</a></td><td>&nbsp;</td><td>6b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Economic_Analysis/equation005.png'>equation005.png</a></td><td>&nbsp;</td><td>194b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Economic_Analysis/equation005.tex'>equation005.tex</a></td><td>&nbsp;</td><td>6b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Economic_Analysis/equation006.png'>equation006.png</a></td><td>&nbsp;</td><td>259b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Economic_Analysis/equation006.tex'>equation006.tex</a></td><td>&nbsp;</td><td>3b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Economic_Analysis/equation007.png'>equation007.png</a></td><td>&nbsp;</td><td>349b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Economic_Analysis/equation007.tex'>equation007.tex</a></td><td>&nbsp;</td><td>8b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Economic_Analysis/equation008.png'>equation008.png</a></td><td>&nbsp;</td><td>275b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Economic_Analysis/equation008.tex'>equation008.tex</a></td><td>&nbsp;</td><td>3b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Economic_Analysis/equation009.png'>equation009.png</a></td><td>&nbsp;</td><td>1.08kb</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Economic_Analysis/equation009.tex'>equation009.tex</a></td><td>&nbsp;</td><td>54b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Economic_Analysis/equation010.png'>equation010.png</a></td><td>&nbsp;</td><td>970b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Economic_Analysis/equation010.tex'>equation010.tex</a></td><td>&nbsp;</td><td>103b</td></tr> -->
+    		<!--  -->
+			<!-- </table> -->
+			<!--  -->
+		<!--  -->
+
+        </div>
+        <div id="disqus_thread"><span></span></div>
+
+    </div>
+    <div id="mw-navigation">
+        <h2>Navigation menu</h2>
+        <div id="mw-head">
+            <div id="left-navigation">
+                <div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+                    <h3 id="p-namespaces-label">Namespaces</h3>
+                    <ul>
+                        <li id="ca-nstab-main" class="selected"><span>TechNotes</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="right-navigation">
+                <div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+                    <h3 id="p-views-label">Views</h3>
+                    <ul>
+                        <div id="p-search" role="search">
+                            <form action="https://www.google.com/search" method="GET" name="searchForm" id="searchForm" enctype="application/x-www-form-urlencoded" >
+
+							<div id="simpleSearch">
+							<input name="sitesearch" value="grimdorlf.github.io" type="hidden">
+                            <input id="searchInput" name="q" results="0" placeholder="Search TechNotes..." title="Search in TechNotes..." tabindex="1" autocomplete="off" type="search">
+                            <input id="searchButton" name="go" value="Go" title="Go to a page with this exact name if it exists" class="searchButton" type="submit">
+							</div>
+
+							<div class="suggestions"><div class="suggestions-results"><span></span></div></div>
+                            </form>
+					    </div>
+
+                    </ul>
+                </div>
+                <div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+                    <h3 tabindex="0" id="p-cactions-label"><span>Actions</span><a tabindex="-1" href="#"></a></h3>
+                    <div class="menu">
+                        <ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="collapsible-nav" id="mw-panel">
+            <div id="p-logo" role="banner">
+                <a style="background-image:url(logo.png); background-size: contain;" href="./About.html" title="Visit the main page"><span></span></a>
+            </div>
+            <div class="portal first persistent" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+                <h3 id="p-navigation-label">Navigation</h3>
+                <div class="body">
+                    <ul>
+						<ul>
+<li><a href="./About.html" title="About" class="page">About</a></li>
+<li><a href="./Absorption_chillers.html" title="Absorption chillers" class="page">Absorption chillers</a></li>
+<li><a href="./Amostragem_Carvão.html" title="Amostragem Carvão" class="page">Amostragem Carvão</a></li>
+<li><a href="./Chemical_Exergy.html" title="Chemical Exergy" class="page">Chemical Exergy</a></li>
+<li><a href="./Co-firing.html" title="Co-firing" class="page">Co-firing</a></li>
+<li><a href="./Cogeneration.html" title="Cogeneration" class="page">Cogeneration</a></li>
+<li><a href="./Designing_processes.html" title="Designing processes" class="page">Designing processes</a></li>
+<li><b>Economic Analysis</b></li>
+<li><a href="./Exergoeconomics.html" title="Exergoeconomics" class="page">Exergoeconomics</a></li>
+<li><a href="./Exergy_applications.html" title="Exergy applications" class="page">Exergy applications</a></li>
+<li><a href="./Exergy_balance.html" title="Exergy balance" class="page">Exergy balance</a></li>
+<li><a href="./Exergy_definition.html" title="Exergy definition" class="page">Exergy definition</a></li>
+<li><a href="./Exergy_efficiency.html" title="Exergy efficiency" class="page">Exergy efficiency</a></li>
+<li><a href="./Expert_systems.html" title="Expert systems" class="page">Expert systems</a></li>
+<li><a href="./Finances.html" title="Finances" class="page">Finances</a></li>
+<li><a href="./Glossary.html" title="Glossary" class="page">Glossary</a></li>
+<li><a href="./Peat.html" title="Peat" class="page">Peat</a></li>
+<li><a href="./Sankey_Diagram.html" title="Sankey Diagram" class="page">Sankey Diagram</a></li>
+<li><a href="./Simulation_software_comparison.html" title="Simulation software comparison" class="page">Simulation software comparison</a></li>
+<li><a href="./Steam_turbines.html" title="Steam turbines" class="page">Steam turbines</a></li>
+<li><a href="./Termelétricas_a_carvão.html" title="Termelétricas a carvão" class="page">Termelétricas a carvão</a></li>
+<li><a href="./Thermoeconomics.html" title="Thermoeconomics" class="page">Thermoeconomics</a></li>
+</ul>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="portal">
+            	<div style="display: block;" class="body">
+            		<ul id="p-tb-list">
+                        <li><a href="./index.html" title="Index">Index</a></li>
+                        <li><a href="./About.html" title="About">About</a></li>
+                        <li><a href="./Contact Info.html" title="Contact Info">Contact Info</a></li>
+            		</ul>
+            	</div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" role="contentinfo">
+        <ul id="footer-places">
+            <li id="footer-places-about"><a href="./About.html" title="About">About TechNotes</a></li>
+            <li id="footer-places-disclaimer"><a href="./General_disclaimer.html.html" title="General disclaimer">Disclaimers</a></li>
+            <li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by/3.0/">Attribution 3.0 Unported</a> unless otherwise noted.</li>
+        </ul>
+		<ul id="footer-icons" class="noprint">
+				<li id="footer-copyrightico">
+					<a href="http://creativecommons.org/licenses/by/3.0/"><img src="ccby_88x31.png" alt="Attribution 3.0 Unported" height="31" width="88"></a>
+			</li>
+		</ul>
+    </div>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">top</button>
+
+<script>
+//Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+<script>
+$(document).ready(function () {
+    'use strict';
+    /* Set up search */
+    $.getJSON('/searchIndex.json', function (response) {
+	    var index, store;
+        // Create index
+        index = lunr.Index.load(response.index);
+        // Create store
+        store = response.store;
+        // Handle search
+        $('input#searchInput').on('keyup', function () {
+            // Get query
+            var query = $(this).val();
+            // Search for it
+            var resultdiv = $('div.suggestions');
+            if(query === ''){
+                /*resultdiv.empty();*/
+                resultdiv.hide();
+            }
+            else {
+                var result = index.search(query);
+                // Output it
+                if (result.length === 0) {
+                    // Hide results
+                    resultdiv.hide();
+                } else {
+                    // Show results
+                    var subresultdiv=$('div.suggestions-results')
+                    subresultdiv.empty();
+                    for (var item in result) {
+                        var ref = result[item].ref;
+                        var searchitem = '<a class="mw-searchSuggest-link" href="' + ref + '"><div class="suggestions-result">' + store[ref].title + '</div></a>';
+                        subresultdiv.append(searchitem);
+                    }
+                    resultdiv.show();
+                }
+            }
+        });
+    });
+	tocbot.init({
+  		tocSelector: '.js-toc',
+  		contentSelector: '.js-toc-content',
+  		headingSelector: 'h2',
+	});
+});
+/* autohide search box */
+$(document).mouseup(function(e) {
+    var container = $("div.suggestions");
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+        container.hide();
+    }
+    var searchbox = $('div#p-search');
+    if (searchbox.is(e.target) || searchbox.has(e.target).length !== 0) {
+        container.show();
+    }
+});
+
+
+</script>
+<noscript>Please enable JavaScript to get search, toc, comments and other stuff.</noscript>
+</body>
+</html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html dir="ltr" class="client-js" lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>Designing processes</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+	<meta name="theme-color" content="#ffffff">
+    <link rel="copyright" href="http://creativecommons.org/licenses/by/3.0/">
+    <link rel="stylesheet" href="wikdorlf.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/3.0.2/tocbot.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/3.0.2/tocbot.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.1/lunr.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/languages/dos.min.js"></script>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/github.min.css">
+
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 skin-vector action-view vector-animateLayout">
+    <div id="mw-page-base" class="noprint"><span></span></div>
+    <div id="mw-head-base" class="noprint"><span></span></div>
+    <div id="content" class="mw-body" role="main">
+        <a id="top"></a>
+        <div id="mw-js-message" style="display:none;"></div>
+        <h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">
+		Designing processes
+		</span></h1>
+        <div id="bodyContent">
+            <div id="mw-content-text" dir="ltr" class="mw-content-ltr" lang="en">
+				  <div class="js-toc"><span></span></div>
+				  <div class="js-toc-content">
+				  <!-- using content splitup instead of the whole page.content to add id to headers for the TOC to work -->
+				  <!-- these IDs are for TOC and they are lame but they work. ideally zim would provide a random function -->
+						<!-- <h1 id="7817">Designing processes</h1> -->
+						
+						
+						<p>
+Created Monday 28 November 2016
+</p>
+
+
+						<!--  -->
+						<h2 id="1157296">Synthesis purpose</h2>
+						
+						<p>
+<ul>
+<li>Adopting the conception of <a href="mendeley://library/document/b9f23ab3-7145-47df-a3ca-99d27f5d1a2d" title="(El-Sayed, 2003)," class="mendeley">(El-Sayed, 2003),</a> an optimal system design has an optimal structure (devices and their conectivity) and an optimal design point (thermodynamic variables and devices' design variables). There is no unique optimal solution, thus the the synthesis of a process search for an optimum solution rather than the optimum.</li>
+<li>The level of complexity of the design task increases for systems that supplies of more than one product and for systems meeting variable demand profiles (time-dependent production) <a href="mendeley://library/document/b9f23ab3-7145-47df-a3ca-99d27f5d1a2d" title="(El-Sayed, 2003)" class="mendeley">(El-Sayed, 2003)</a>. Transient simulation can be a very cumbersome task and one specific simulation would easily lack generality, i.e. it would be unsuitable for a different aplication <a href="mendeley://library/document/7900b59a-fdb2-4951-a890-8facd60b9dbd" title="(Sciubba, 1996)" class="mendeley">(Sciubba, 1996)</a>.</li>
+</ul>
+</p>
+
+
+						<!--  -->
+						<h2 id="479244">Methods of analysis</h2>
+						
+						<p>
+<ul>
+<li>Almost all advanced methods used for analysis of energy systems are numerical. These models involve assumptions and may view the same system from different angles with different level of detail. These facts imply variation in the quality and reliability of developed models <a href="mendeley://library/document/b9f23ab3-7145-47df-a3ca-99d27f5d1a2d" title="(El-Sayed, 2003)" class="mendeley">(El-Sayed, 2003)</a>.</li>
+</ul>
+</p>
+
+
+						<!--  -->
+						<h2 id="576272">level of details</h2>
+						
+						<p>
+<ul>
+<li>According to <a href="mendeley://library/document/b9f23ab3-7145-47df-a3ca-99d27f5d1a2d" title="(El-Sayed, 2003)," class="mendeley">(El-Sayed, 2003),</a> When the synthesis of the process is seeking higher effficiency and lower cost, the adequate element is a black box representing an elementary energy conversion process. Conversely, when designing a device that performs an elementary process a higher level of details is needed by splitting the elementary process into smaller or even differential elements.  </li>
+</ul>
+</p>
+
+
+						<!--  -->
+						<h2 id="32182316">Process simulation</h2>
+						
+						<p>
+<ul>
+<li>Some issues about the process simulation practice were remarked by <a href="mendeley://library/document/7900b59a-fdb2-4951-a890-8facd60b9dbd" title="(Sciubba, 1996)" class="mendeley">(Sciubba, 1996)</a> :
+<ul>
+<li>There is a lack of generality when simulating different kind of processes (<i>i.e.</i> each type of plant having its own simulation code).</li>
+<li>There is a great level of repetitivity, common elementary routines are carried out for each specific plant.</li>
+<li>There are many codes which perform the same task, giving different results when applied to the same problem. </li>
+<li>Generally, these codes are not mutually compatible.</li>
+<li>There are technical and commercial barriers for overcomming these issues.</li>
+</ul>
+</li>
+<li>Currently there are many generic process simulators [HOLD] which can be used in a vast number of processes, due to their modular component (<i>i.e.</i> compressors, pumps, engines, etc.) approach. Most of them have a graphical user interfase (GUI) that facilitates the elaboration of components interconnection schemes, and generally have extensive built-in libraries formed by a set of code sections for components' modeling. Aditionally, many of them permit the integration of external routines (algorithms) with the purpose of extend their libraries and some functionalities.</li>
+<li>Still there is a lack of compatibility among commonly used simulators (possibly because of commercial reasons) and some divergences can be found in the solutions obtained by diferent simulators for the same problem  (<i>e.g. </i> [REF]). However, there are various attemps to give greater interoperability between different process simulators for enabling the user to take full advantage of each simulator strenghts. In general, these attemps consist in the creation of protocols and programing routines for data exchange, in particular it is the case of the CAPE-OPEN project [REF] and MOSAIC simulation environment [REF]. On the other hand,  the current development of open-source process simulators (<i>e.g.</i> [HOLD]), which expose their code sections for interested developers around the world through especialized repository websites, would facilitate their compatibilization, validation and improvement.</li>
+<li>Most of the commercial simulators have included advanced features such as optimization routines, unsteady (dynamic or transient) simulations, process control sequences, interoperability with software associated with other engineering disciplines, etc. However, as mentioned by <a href="mendeley://library/document/7900b59a-fdb2-4951-a890-8facd60b9dbd" title="(Sciubba, 1996)," class="mendeley">(Sciubba, 1996),</a> [HOLD]</li>
+<li><a href="mendeley://library/document/7900b59a-fdb2-4951-a890-8facd60b9dbd" title="(Sciubba, 1996)" class="mendeley">(Sciubba, 1996)</a> presents a general description or the process simulation task in different development stages, from the iterative use of basic mechanical calculators with use of properties charts, to the development of artificial intelligence algorithms capable of elaborating a proper plant layout given a serie of process requisites.   </li>
+</ul>
+</p>
+
+
+						<!--  -->
+						
+						<h3 id="840361">definition</h3>
+						<p>
+<ul>
+<li><a href="mendeley://library/document/7900b59a-fdb2-4951-a890-8facd60b9dbd" title="(Sciubba, 1996)" class="mendeley">(Sciubba, 1996)</a> summarizes a general and logical approach for computational (numeric) implementation of an automatic process simulation, where a process P can be sinthetically represented by a nonlinear matricial operator \PI, which acts on the plant inputs to produce  the plant outputs. In such a way the process simulation must:  (1) devise a proper representation of a process in terms of subprocesses; (2) finf a formal mathematical representation for its transfer funtion \PI; (3) aquire all necessary boundary and initial conditions; (4) solve the system for each subprocess and (4) assemble the partial solutions into the global one.</li>
+</ul>
+</p>
+
+<br>
+<br>
+<br>
+<br>
+
+
+					<br><br>
+				</div>
+            </div>
+            <br>
+            <div class="visualClear"><span></span></div>
+
+		<!--  -->
+
+        </div>
+        <div id="disqus_thread"><span></span></div>
+
+    </div>
+    <div id="mw-navigation">
+        <h2>Navigation menu</h2>
+        <div id="mw-head">
+            <div id="left-navigation">
+                <div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+                    <h3 id="p-namespaces-label">Namespaces</h3>
+                    <ul>
+                        <li id="ca-nstab-main" class="selected"><span>TechNotes</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="right-navigation">
+                <div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+                    <h3 id="p-views-label">Views</h3>
+                    <ul>
+                        <div id="p-search" role="search">
+                            <form action="https://www.google.com/search" method="GET" name="searchForm" id="searchForm" enctype="application/x-www-form-urlencoded" >
+
+							<div id="simpleSearch">
+							<input name="sitesearch" value="grimdorlf.github.io" type="hidden">
+                            <input id="searchInput" name="q" results="0" placeholder="Search TechNotes..." title="Search in TechNotes..." tabindex="1" autocomplete="off" type="search">
+                            <input id="searchButton" name="go" value="Go" title="Go to a page with this exact name if it exists" class="searchButton" type="submit">
+							</div>
+
+							<div class="suggestions"><div class="suggestions-results"><span></span></div></div>
+                            </form>
+					    </div>
+
+                    </ul>
+                </div>
+                <div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+                    <h3 tabindex="0" id="p-cactions-label"><span>Actions</span><a tabindex="-1" href="#"></a></h3>
+                    <div class="menu">
+                        <ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="collapsible-nav" id="mw-panel">
+            <div id="p-logo" role="banner">
+                <a style="background-image:url(logo.png); background-size: contain;" href="./About.html" title="Visit the main page"><span></span></a>
+            </div>
+            <div class="portal first persistent" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+                <h3 id="p-navigation-label">Navigation</h3>
+                <div class="body">
+                    <ul>
+						<ul>
+<li><a href="./About.html" title="About" class="page">About</a></li>
+<li><a href="./Absorption_chillers.html" title="Absorption chillers" class="page">Absorption chillers</a></li>
+<li><a href="./Amostragem_Carvão.html" title="Amostragem Carvão" class="page">Amostragem Carvão</a></li>
+<li><a href="./Chemical_Exergy.html" title="Chemical Exergy" class="page">Chemical Exergy</a></li>
+<li><a href="./Co-firing.html" title="Co-firing" class="page">Co-firing</a></li>
+<li><a href="./Cogeneration.html" title="Cogeneration" class="page">Cogeneration</a></li>
+<li><b>Designing processes</b></li>
+<li><a href="./Economic_Analysis.html" title="Economic Analysis" class="page">Economic Analysis</a></li>
+<li><a href="./Exergoeconomics.html" title="Exergoeconomics" class="page">Exergoeconomics</a></li>
+<li><a href="./Exergy_applications.html" title="Exergy applications" class="page">Exergy applications</a></li>
+<li><a href="./Exergy_balance.html" title="Exergy balance" class="page">Exergy balance</a></li>
+<li><a href="./Exergy_definition.html" title="Exergy definition" class="page">Exergy definition</a></li>
+<li><a href="./Exergy_efficiency.html" title="Exergy efficiency" class="page">Exergy efficiency</a></li>
+<li><a href="./Expert_systems.html" title="Expert systems" class="page">Expert systems</a></li>
+<li><a href="./Finances.html" title="Finances" class="page">Finances</a></li>
+<li><a href="./Glossary.html" title="Glossary" class="page">Glossary</a></li>
+<li><a href="./Peat.html" title="Peat" class="page">Peat</a></li>
+<li><a href="./Sankey_Diagram.html" title="Sankey Diagram" class="page">Sankey Diagram</a></li>
+<li><a href="./Simulation_software_comparison.html" title="Simulation software comparison" class="page">Simulation software comparison</a></li>
+<li><a href="./Steam_turbines.html" title="Steam turbines" class="page">Steam turbines</a></li>
+<li><a href="./Termelétricas_a_carvão.html" title="Termelétricas a carvão" class="page">Termelétricas a carvão</a></li>
+<li><a href="./Thermoeconomics.html" title="Thermoeconomics" class="page">Thermoeconomics</a></li>
+</ul>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="portal">
+            	<div style="display: block;" class="body">
+            		<ul id="p-tb-list">
+                        <li><a href="./index.html" title="Index">Index</a></li>
+                        <li><a href="./About.html" title="About">About</a></li>
+                        <li><a href="./Contact Info.html" title="Contact Info">Contact Info</a></li>
+            		</ul>
+            	</div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" role="contentinfo">
+        <ul id="footer-places">
+            <li id="footer-places-about"><a href="./About.html" title="About">About TechNotes</a></li>
+            <li id="footer-places-disclaimer"><a href="./General_disclaimer.html.html" title="General disclaimer">Disclaimers</a></li>
+            <li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by/3.0/">Attribution 3.0 Unported</a> unless otherwise noted.</li>
+        </ul>
+		<ul id="footer-icons" class="noprint">
+				<li id="footer-copyrightico">
+					<a href="http://creativecommons.org/licenses/by/3.0/"><img src="ccby_88x31.png" alt="Attribution 3.0 Unported" height="31" width="88"></a>
+			</li>
+		</ul>
+    </div>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">top</button>
+
+<script>
+//Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+<script>
+$(document).ready(function () {
+    'use strict';
+    /* Set up search */
+    $.getJSON('/searchIndex.json', function (response) {
+	    var index, store;
+        // Create index
+        index = lunr.Index.load(response.index);
+        // Create store
+        store = response.store;
+        // Handle search
+        $('input#searchInput').on('keyup', function () {
+            // Get query
+            var query = $(this).val();
+            // Search for it
+            var resultdiv = $('div.suggestions');
+            if(query === ''){
+                /*resultdiv.empty();*/
+                resultdiv.hide();
+            }
+            else {
+                var result = index.search(query);
+                // Output it
+                if (result.length === 0) {
+                    // Hide results
+                    resultdiv.hide();
+                } else {
+                    // Show results
+                    var subresultdiv=$('div.suggestions-results')
+                    subresultdiv.empty();
+                    for (var item in result) {
+                        var ref = result[item].ref;
+                        var searchitem = '<a class="mw-searchSuggest-link" href="' + ref + '"><div class="suggestions-result">' + store[ref].title + '</div></a>';
+                        subresultdiv.append(searchitem);
+                    }
+                    resultdiv.show();
+                }
+            }
+        });
+    });
+	tocbot.init({
+  		tocSelector: '.js-toc',
+  		contentSelector: '.js-toc-content',
+  		headingSelector: 'h2',
+	});
+});
+/* autohide search box */
+$(document).mouseup(function(e) {
+    var container = $("div.suggestions");
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+        container.hide();
+    }
+    var searchbox = $('div#p-search');
+    if (searchbox.is(e.target) || searchbox.has(e.target).length !== 0) {
+        container.show();
+    }
+});
+
+
+</script>
+<noscript>Please enable JavaScript to get search, toc, comments and other stuff.</noscript>
+</body>
+</html>

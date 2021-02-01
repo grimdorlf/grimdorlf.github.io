@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html dir="ltr" class="client-js" lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>Chemical Exergy</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+	<meta name="theme-color" content="#ffffff">
+    <link rel="copyright" href="http://creativecommons.org/licenses/by/3.0/">
+    <link rel="stylesheet" href="wikdorlf.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/3.0.2/tocbot.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/3.0.2/tocbot.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.1/lunr.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/languages/dos.min.js"></script>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/github.min.css">
+
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 skin-vector action-view vector-animateLayout">
+    <div id="mw-page-base" class="noprint"><span></span></div>
+    <div id="mw-head-base" class="noprint"><span></span></div>
+    <div id="content" class="mw-body" role="main">
+        <a id="top"></a>
+        <div id="mw-js-message" style="display:none;"></div>
+        <h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">
+		Chemical Exergy
+		</span></h1>
+        <div id="bodyContent">
+            <div id="mw-content-text" dir="ltr" class="mw-content-ltr" lang="en">
+				  <div class="js-toc"><span></span></div>
+				  <div class="js-toc-content">
+				  <!-- using content splitup instead of the whole page.content to add id to headers for the TOC to work -->
+				  <!-- these IDs are for TOC and they are lame but they work. ideally zim would provide a random function -->
+						<!-- <h1 id="36581326">Chemical Exergy</h1> -->
+						
+						
+						<p>
+Created Wednesday 23 July 2014
+</p>
+
+<p>
+In order to calculate properly the chemical exergy of an non-tabulated substance, there are two identifiable methods according to <a href="./Chemical_Exergy/2013_Querol, Gonzalez-Regueral, Perez-Benedito.pdf" title="Querol, 2013" class="file">Querol, 2013</a> (pg. 20): <br>
+<ul>
+<li>A general method where a <b>compound X</b>, formed by various <b>elements</b> whose chemical exergy  <img src="./Chemical_Exergy/equation.png"> are <b>known</b>. The free energy of formation  <img src="./Chemical_Exergy/equation001.png"> of <b>compound X</b> must be known. It should be corrected if the reference state conditions are different to the environment conditions. In this way:</li>
+</ul>
+</p>
+
+<p>
+<div style='padding-left: 150pt'>
+<img src="./Chemical_Exergy/equation002.png">
+</div>
+</p>
+
+<p>
+<div style='padding-left: 30pt'>
+As an example  <img src="./Chemical_Exergy/equation003.png"> . This method is very similar to those exposed by <a href="./Chemical_Exergy/1995, Kotas.pdf" title="Kotas, 1995," class="file">Kotas, 1995,</a> equation <i>A-10</i> and <a href="./Chemical_Exergy/1988_Lozano, Valero.pdf" title="Lozano, 1988" class="file">Lozano, 1988</a> .
+</div>
+</p>
+
+<p>
+<ul>
+<li>The other method for substances not found in the reference environment (<b>RE</b>), but stoichiometrically linked with substances only from RE. It means that the <i>substance X</i> (in this case methane) can react with substances in RE to obtain substances of the RE. for example:</li>
+</ul>
+</p>
+
+<p>
+<div style='padding-left: 30pt'>
+<img src="./Chemical_Exergy/equation004.png">, here the general formulation is 
+</div>
+<div style='padding-left: 390pt'>
+<img src="./Chemical_Exergy/equation005.png">
+</div>
+<div style='padding-left: 30pt'>
+here, the stoichiometric coefficients are considered negatives for reactants and positive for products, as shown here:
+</div>
+</p>
+
+<p>
+<div style='padding-left: 30pt'>
+<img src="./Chemical_Exergy/pasted_image001.png" width="350">
+</div>
+</p>
+
+<p>
+Another example is presented in <a href="./Chemical_Exergy/2009_Wall.pdf" title="Wall, 2009" class="file">Wall, 2009</a> (pg. 67),  using a similar method  (and different notation) for the calculation of exergy of the iron in the Swedish ore. Here the formulation was<br>
+<div style='padding-left: 90pt'>
+<img src="./Chemical_Exergy/equation008.png">
+</div>
+</p>
+
+<p>
+considering <img src="./Chemical_Exergy/equation009.png"> as the substance present in the RE and the <img src="./Chemical_Exergy/equation010.png"> as the substance present in the Ore. the result obtained shows some difference with that reported in <a href="http://www.exergoecology.com/excalc/index_html/new_calc_exergy" title="http://www.exergoecology.com/excalc/index_html/new_calc_exergy" class="http">http://www.exergoecology.com/excalc/index_html/new_calc_exergy</a>.
+</p>
+
+<h4>Chemical exergy of streams (Mixtures)</h4>
+
+<br>
+
+<p>
+According to  <a href="./Chemical_Exergy/2013_Querol, Gonzalez-Regueral, Perez-Benedito.pdf" title="Querol, 2013" class="file">Querol, 2013</a> (pg. 23), the chemical exergy of a <b>stream</b> can be expressed as  <img src="./Chemical_Exergy/equation006.png"> , However it is pointed out<br>
+that  other publications include a second addend <img src="./Chemical_Exergy/equation007.png">  ,which expresses the exergy destroyed by mixing, but when the <b>entropy</b> used for the calculation of the <b>physical exergy</b> corresponds to that of the <b>whole stream</b> (as in the most of simulators), the mixing effect is already considered, thus this addend <b>would not be necessary.</b>
+</p>
+
+<br>
+
+
+					<br><br>
+				</div>
+            </div>
+            <br>
+            <div class="visualClear"><span></span></div>
+
+		<!--  -->
+			<!--  -->
+				<!-- <b>Attachments:</b> -->
+				<!-- <table> -->
+			<!--  -->
+				<!-- <tr><td><a href='./Chemical_Exergy/1988_Lozano, Valero.pdf'>1988_Lozano, Valero.pdf</a></td><td>&nbsp;</td><td>1.08Mb</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Chemical_Exergy/1995, Kotas.pdf'>1995, Kotas.pdf</a></td><td>&nbsp;</td><td>25.7Mb</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Chemical_Exergy/2009_Wall.pdf'>2009_Wall.pdf</a></td><td>&nbsp;</td><td>981kb</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Chemical_Exergy/2013_Querol, Gonzalez-Regueral, Perez-Benedito.pdf'>2013_Querol, Gonzalez-Regueral, Perez-Benedito.pdf</a></td><td>&nbsp;</td><td>2.66Mb</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Chemical_Exergy/equation.png'>equation.png</a></td><td>&nbsp;</td><td>260b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Chemical_Exergy/equation.tex'>equation.tex</a></td><td>&nbsp;</td><td>12b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Chemical_Exergy/equation001.png'>equation001.png</a></td><td>&nbsp;</td><td>419b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Chemical_Exergy/equation001.tex'>equation001.tex</a></td><td>&nbsp;</td><td>15b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Chemical_Exergy/equation002.png'>equation002.png</a></td><td>&nbsp;</td><td>1.01kb</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Chemical_Exergy/equation002.tex'>equation002.tex</a></td><td>&nbsp;</td><td>52b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Chemical_Exergy/equation003.png'>equation003.png</a></td><td>&nbsp;</td><td>1.12kb</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Chemical_Exergy/equation003.tex'>equation003.tex</a></td><td>&nbsp;</td><td>64b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Chemical_Exergy/equation004.png'>equation004.png</a></td><td>&nbsp;</td><td>771b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Chemical_Exergy/equation004.tex'>equation004.tex</a></td><td>&nbsp;</td><td>20b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Chemical_Exergy/equation005.png'>equation005.png</a></td><td>&nbsp;</td><td>1.49kb</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Chemical_Exergy/equation005.tex'>equation005.tex</a></td><td>&nbsp;</td><td>105b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Chemical_Exergy/equation006.png'>equation006.png</a></td><td>&nbsp;</td><td>562b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Chemical_Exergy/equation006.tex'>equation006.tex</a></td><td>&nbsp;</td><td>34b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Chemical_Exergy/equation007.png'>equation007.png</a></td><td>&nbsp;</td><td>731b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Chemical_Exergy/equation007.tex'>equation007.tex</a></td><td>&nbsp;</td><td>25b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Chemical_Exergy/equation008.png'>equation008.png</a></td><td>&nbsp;</td><td>2.15kb</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Chemical_Exergy/equation008.tex'>equation008.tex</a></td><td>&nbsp;</td><td>119b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Chemical_Exergy/equation009.png'>equation009.png</a></td><td>&nbsp;</td><td>368b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Chemical_Exergy/equation009.tex'>equation009.tex</a></td><td>&nbsp;</td><td>7b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Chemical_Exergy/equation010.png'>equation010.png</a></td><td>&nbsp;</td><td>376b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Chemical_Exergy/equation010.tex'>equation010.tex</a></td><td>&nbsp;</td><td>7b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Chemical_Exergy/pasted_image.png'>pasted_image.png</a></td><td>&nbsp;</td><td>32.2kb</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Chemical_Exergy/pasted_image001.png'>pasted_image001.png</a></td><td>&nbsp;</td><td>32.2kb</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Chemical_Exergy/pasted_image002.png'>pasted_image002.png</a></td><td>&nbsp;</td><td>14.7kb</td></tr> -->
+    		<!--  -->
+			<!-- </table> -->
+			<!--  -->
+		<!--  -->
+
+        </div>
+        <div id="disqus_thread"><span></span></div>
+
+    </div>
+    <div id="mw-navigation">
+        <h2>Navigation menu</h2>
+        <div id="mw-head">
+            <div id="left-navigation">
+                <div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+                    <h3 id="p-namespaces-label">Namespaces</h3>
+                    <ul>
+                        <li id="ca-nstab-main" class="selected"><span>TechNotes</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="right-navigation">
+                <div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+                    <h3 id="p-views-label">Views</h3>
+                    <ul>
+                        <div id="p-search" role="search">
+                            <form action="https://www.google.com/search" method="GET" name="searchForm" id="searchForm" enctype="application/x-www-form-urlencoded" >
+
+							<div id="simpleSearch">
+							<input name="sitesearch" value="grimdorlf.github.io" type="hidden">
+                            <input id="searchInput" name="q" results="0" placeholder="Search TechNotes..." title="Search in TechNotes..." tabindex="1" autocomplete="off" type="search">
+                            <input id="searchButton" name="go" value="Go" title="Go to a page with this exact name if it exists" class="searchButton" type="submit">
+							</div>
+
+							<div class="suggestions"><div class="suggestions-results"><span></span></div></div>
+                            </form>
+					    </div>
+
+                    </ul>
+                </div>
+                <div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+                    <h3 tabindex="0" id="p-cactions-label"><span>Actions</span><a tabindex="-1" href="#"></a></h3>
+                    <div class="menu">
+                        <ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="collapsible-nav" id="mw-panel">
+            <div id="p-logo" role="banner">
+                <a style="background-image:url(logo.png); background-size: contain;" href="./About.html" title="Visit the main page"><span></span></a>
+            </div>
+            <div class="portal first persistent" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+                <h3 id="p-navigation-label">Navigation</h3>
+                <div class="body">
+                    <ul>
+						<ul>
+<li><a href="./About.html" title="About" class="page">About</a></li>
+<li><a href="./Absorption_chillers.html" title="Absorption chillers" class="page">Absorption chillers</a></li>
+<li><a href="./Amostragem_Carvão.html" title="Amostragem Carvão" class="page">Amostragem Carvão</a></li>
+<li><b>Chemical Exergy</b></li>
+<li><a href="./Co-firing.html" title="Co-firing" class="page">Co-firing</a></li>
+<li><a href="./Cogeneration.html" title="Cogeneration" class="page">Cogeneration</a></li>
+<li><a href="./Designing_processes.html" title="Designing processes" class="page">Designing processes</a></li>
+<li><a href="./Economic_Analysis.html" title="Economic Analysis" class="page">Economic Analysis</a></li>
+<li><a href="./Exergoeconomics.html" title="Exergoeconomics" class="page">Exergoeconomics</a></li>
+<li><a href="./Exergy_applications.html" title="Exergy applications" class="page">Exergy applications</a></li>
+<li><a href="./Exergy_balance.html" title="Exergy balance" class="page">Exergy balance</a></li>
+<li><a href="./Exergy_definition.html" title="Exergy definition" class="page">Exergy definition</a></li>
+<li><a href="./Exergy_efficiency.html" title="Exergy efficiency" class="page">Exergy efficiency</a></li>
+<li><a href="./Expert_systems.html" title="Expert systems" class="page">Expert systems</a></li>
+<li><a href="./Finances.html" title="Finances" class="page">Finances</a></li>
+<li><a href="./Glossary.html" title="Glossary" class="page">Glossary</a></li>
+<li><a href="./Peat.html" title="Peat" class="page">Peat</a></li>
+<li><a href="./Sankey_Diagram.html" title="Sankey Diagram" class="page">Sankey Diagram</a></li>
+<li><a href="./Simulation_software_comparison.html" title="Simulation software comparison" class="page">Simulation software comparison</a></li>
+<li><a href="./Steam_turbines.html" title="Steam turbines" class="page">Steam turbines</a></li>
+<li><a href="./Termelétricas_a_carvão.html" title="Termelétricas a carvão" class="page">Termelétricas a carvão</a></li>
+<li><a href="./Thermoeconomics.html" title="Thermoeconomics" class="page">Thermoeconomics</a></li>
+</ul>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="portal">
+            	<div style="display: block;" class="body">
+            		<ul id="p-tb-list">
+                        <li><a href="./index.html" title="Index">Index</a></li>
+                        <li><a href="./About.html" title="About">About</a></li>
+                        <li><a href="./Contact Info.html" title="Contact Info">Contact Info</a></li>
+            		</ul>
+            	</div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" role="contentinfo">
+        <ul id="footer-places">
+            <li id="footer-places-about"><a href="./About.html" title="About">About TechNotes</a></li>
+            <li id="footer-places-disclaimer"><a href="./General_disclaimer.html.html" title="General disclaimer">Disclaimers</a></li>
+            <li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by/3.0/">Attribution 3.0 Unported</a> unless otherwise noted.</li>
+        </ul>
+		<ul id="footer-icons" class="noprint">
+				<li id="footer-copyrightico">
+					<a href="http://creativecommons.org/licenses/by/3.0/"><img src="ccby_88x31.png" alt="Attribution 3.0 Unported" height="31" width="88"></a>
+			</li>
+		</ul>
+    </div>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">top</button>
+
+<script>
+//Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+<script>
+$(document).ready(function () {
+    'use strict';
+    /* Set up search */
+    $.getJSON('/searchIndex.json', function (response) {
+	    var index, store;
+        // Create index
+        index = lunr.Index.load(response.index);
+        // Create store
+        store = response.store;
+        // Handle search
+        $('input#searchInput').on('keyup', function () {
+            // Get query
+            var query = $(this).val();
+            // Search for it
+            var resultdiv = $('div.suggestions');
+            if(query === ''){
+                /*resultdiv.empty();*/
+                resultdiv.hide();
+            }
+            else {
+                var result = index.search(query);
+                // Output it
+                if (result.length === 0) {
+                    // Hide results
+                    resultdiv.hide();
+                } else {
+                    // Show results
+                    var subresultdiv=$('div.suggestions-results')
+                    subresultdiv.empty();
+                    for (var item in result) {
+                        var ref = result[item].ref;
+                        var searchitem = '<a class="mw-searchSuggest-link" href="' + ref + '"><div class="suggestions-result">' + store[ref].title + '</div></a>';
+                        subresultdiv.append(searchitem);
+                    }
+                    resultdiv.show();
+                }
+            }
+        });
+    });
+	tocbot.init({
+  		tocSelector: '.js-toc',
+  		contentSelector: '.js-toc-content',
+  		headingSelector: 'h2',
+	});
+});
+/* autohide search box */
+$(document).mouseup(function(e) {
+    var container = $("div.suggestions");
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+        container.hide();
+    }
+    var searchbox = $('div#p-search');
+    if (searchbox.is(e.target) || searchbox.has(e.target).length !== 0) {
+        container.show();
+    }
+});
+
+
+</script>
+<noscript>Please enable JavaScript to get search, toc, comments and other stuff.</noscript>
+</body>
+</html>

@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html dir="ltr" class="client-js" lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>Exergy definition</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+	<meta name="theme-color" content="#ffffff">
+    <link rel="copyright" href="http://creativecommons.org/licenses/by/3.0/">
+    <link rel="stylesheet" href="wikdorlf.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/3.0.2/tocbot.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/3.0.2/tocbot.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.1/lunr.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/languages/dos.min.js"></script>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/github.min.css">
+
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 skin-vector action-view vector-animateLayout">
+    <div id="mw-page-base" class="noprint"><span></span></div>
+    <div id="mw-head-base" class="noprint"><span></span></div>
+    <div id="content" class="mw-body" role="main">
+        <a id="top"></a>
+        <div id="mw-js-message" style="display:none;"></div>
+        <h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">
+		Exergy definition
+		</span></h1>
+        <div id="bodyContent">
+            <div id="mw-content-text" dir="ltr" class="mw-content-ltr" lang="en">
+				  <div class="js-toc"><span></span></div>
+				  <div class="js-toc-content">
+				  <!-- using content splitup instead of the whole page.content to add id to headers for the TOC to work -->
+				  <!-- these IDs are for TOC and they are lame but they work. ideally zim would provide a random function -->
+						<!-- <h1 id="49541503">Exergy definition</h1> -->
+						
+						
+						<p>
+Created Wednesday 30 November 2016<br>
+<span class="zim-tag">@exergy</span>
+</p>
+
+<p>
+Exergy is an extensive thermodynamic property of a system defined as the maximum <i>work developed in the ideal process from a given state to the environmet state </i><a href="mendeley://library/document/045cd8a5-34dc-40ea-ad42-e920652bfc00" title="(Sciubba, 2005)" class="mendeley">(Sciubba, 2005)</a>,  or alternatively as the minimum theoretical useful work required to form a quantity of matter from substances present in the environment and to bring the matter to a specified state <a href="mendeley://library/document/e945cce9-ef0d-4350-a343-a605c1630b1d" title="(Bejan, Tsatsaronis, &amp; Moran, 1996)" class="mendeley">(Bejan, Tsatsaronis, &amp; Moran, 1996)</a> . It is an attribute fo the pair system-environment and it is associated to the quality of diferent energy forms understood as the <i>measure of its capacity of cause change</i> <a href="mendeley://library/document/319dd286-6d05-4494-a65e-ed3c1a95c4c2" title="(Kotas, 1985)." class="mendeley">(Kotas, 1985).</a> In that sense,  <i>'high quality' forms of energy</i> (<i>e.g.</i> potential, kinetic, mechanical, electrical) can be converted into each other with 100% efficiency, while <i>Lower forms of energy</i> (internal energy, chemical energy, thermal radiation, turbulent kinetic energy) cannot be converted into each other without an intrinsic efficiency loss. That loss are 'dissipated' into a low-temperature flux absorved or provided by the environment and is consequence of the irreversibility (entropy generation)  inherent to real processes <a href="mendeley://library/document/045cd8a5-34dc-40ea-ad42-e920652bfc00" title="(Sciubba, 2005)" class="mendeley">(Sciubba, 2005)</a><a href="mendeley://library/document/9f1a1b49-dd72-495e-809f-82767f933987" title="(Bejan, 2006)" class="mendeley">(Bejan, 2006)</a> . Consequently, <i>exergy is not conserved:// in every real process, there is an exergy destruction caused by irreversibility effects, including the processes where all the initial capabilty to develop work is destroyed spontaneously. Since no work is needed to effect such a spontaneous change, it follows that the </i>value of exergy is at least zero and therefore cannot be negative<i>, comprising those systems receiving thermal energy </i>from// environment <a href="mendeley://library/document/e945cce9-ef0d-4350-a343-a605c1630b1d" title="(Bejan, Tsatsaronis, &amp; Moran, 1996)." class="mendeley">(Bejan, Tsatsaronis, &amp; Moran, 1996).</a> However, <a href="mendeley://library/document/3ad4b1a5-fcb1-4ed4-9d9d-11a91c9984ef" title="(Sciubba &amp; Wall, 2007)" class="mendeley">(Sciubba &amp; Wall, 2007)</a> mentions thta there may be particular combinations of the values of the thermodynamic parameters of a system such that its exergy value is negative; in these cases, to bring the system in equilibrium with the reference environment, work must be done on the system by the environment.<br>
+The environment can be understood as a system so large that its properties are not altered by the interaction with the man-made system <a href="mendeley://library/document/045cd8a5-34dc-40ea-ad42-e920652bfc00" title="(Sciubba, 2005)" class="mendeley">(Sciubba, 2005)</a>. It is normally regarded as composed of common substances existing in abundance within the Earth's atmosphere, ocean and crust, in such a way that there is no possibility of developing work from interactions between parts of itself. <br>
+In absence of nuclear, magnetic, electrical and surface tension effects, the total exergy of a system <b>B </b>can be expressed as:<br>
+<div style='padding-left: 150pt'>
+<img src="./Exergy_definition/equation004.png">
+</div>
+where B<sup>PH</sup>, B<sup>KN</sup> and B<sup>PT</sup> are, respectively, the physical exergy, the kinetic exergy and the potential exergy, their sum is commonly referred as the thermomechanical exergy; on the other hand, B<sup>CH</sup> corresponds to the chemical exergy. Considering a system at rest relative to the environment (B<sup>KN</sup>=B<sup>PT</sup>=0), the physical exergy is the maximum theoretical work obtainable as the system passes from its initial state at T and P to a state in thermal and mechanical equilibrium with the environment (at T<sub>0</sub> and P<sub>0</sub>). The chemical exergy is the maximum theoretical useful work obtainable as the system passes from the thermomechanical equilibrium to a complete equilibrium with the environment <a href="mendeley://library/document/e945cce9-ef0d-4350-a343-a605c1630b1d" title="(Bejan, Tsatsaronis, &amp; Moran, 1996)" class="mendeley">(Bejan, Tsatsaronis, &amp; Moran, 1996)</a>. <br>
+Since the exergy is an extensive property, the value of the specific exergy can be expressed as<br>
+<img src="./Exergy_definition/equation013.png"> in a mass basis or<br>
+<img src="./Exergy_definition/equation014.png"> in a molar basis.
+</p>
+
+
+						<!--  -->
+						<h2 id="423249">Physical exergy</h2>
+						
+						<p>
+For a open system at specified state, the physical exergy is given by the expression <br>
+<img src="./Exergy_definition/equation012.png"><br>
+where H and S denote, respectively, the enthalpy and the entropy at the specified state, while H<sub>0</sub> and S<sub>0</sub> are the values of the same properties when the system is at thermomechanical equilibrium with the environment. 
+</p>
+
+
+						<!--  -->
+						<h2 id="49512482">Chemical exergy</h2>
+						
+						<p>
+For the calculation of the chemical exergy of a system, the substances comprising the system must be referred to the properties of a suitable selected set of environmental substances. Given the difficulty and the inconvenience of modelling thoroughly the composition of the natural environment, the notion of the standard chemical exergy of a substance was introduced, which is related to it in a standard state  (T<sub>n</sub>=298.15, P<sub>n</sub>=101.325 kPa), with the assumption that the conventional mean concentrations of a set of reference species contained in the reference environment (RE) have been taken into account. These species generally fall into three groups: gaseous components of the atmosphere, solid substances from the lithosphere, and ionic and nonionic substances from the oceans resembling as closely as possible the chemical makeup of natural environment. The reasoning of this approach and the detailed procedure of calculation of standard chemical exergy (b<sup>o</sup><sub>ch</sub>) are presented in  <a href="mendeley://library/document/571448b1-c795-41cd-a0fd-2d1e3c0a6136" title="(Szargut, Morris, &amp; Steward, 1988)" class="mendeley">(Szargut, Morris, &amp; Steward, 1988)</a>; the values for reference species, as well as for many common substances are tabulated in molar basis. Moreover, according to this reference, if a high accuracy is not needed for a tabulated substance, it follows that <img src="./Exergy_definition/equation015.png"> .<br>
+In order to calculate properly the chemical exergy of an non-tabulated substance, there are two identifiable methods according to <a href="mendeley://library/document/6edab843-17d6-4e45-b66c-885eab0cd9b1" title="(Querol, Gonzalez-Regueral, &amp; Perez-Benedito, 2013)." class="mendeley">(Querol, Gonzalez-Regueral, &amp; Perez-Benedito, 2013).</a><br>
+<ol type="1" start="1">
+<li>A general method for a <b>compound X</b>, formed by various <b>elements</b> whose chemical exergy <img src="./Exergy_definition/equation016.png"></li>
+</ol>
+ are known together with the free energy of formation of the compound <img src="./Exergy_definition/equation017.png">. The later should be corrected if the reference state conditions are different to the RE conditions. In this case, the specific chemical exergy (molar basis) is calculated using the following expression:<br>
+<div style='padding-left: 30pt'>
+<img src="./Exergy_definition/equation018.png">
+</div>
+As an example  <img src="./Exergy_definition/equation019.png"> . This method is very similar to those exposed by <a href="mendeley://library/document/ff059750-091b-4e1f-86b2-1b740ba7e8a3" title="(Kotas, 1995)" class="mendeley">(Kotas, 1995)</a> and <a href="mendeley://library/document/6fd6502b-612c-484a-9395-306ef535e93d" title="(Lozano &amp; Valero, 1988)" class="mendeley">(Lozano &amp; Valero, 1988)</a>.<br>
+<ol type="1" start="2">
+<li>The other method for substances not found in the RE, but stoichiometrically linked with substances only from RE. It means that the <i>substance X</i> (in this case methane) can react with substances in RE to obtain substances of the RE. for example:</li>
+</ol>
+<div style='padding-left: 30pt'>
+<img src="./Exergy_definition/equation020.png"> , here the general formulation is 
+</div>
+<img src="./Exergy_definition/equation021.png"><br>
+here, the stoichiometric coefficients are considered negatives for reactants and positive for products, as shown here:<br>
+<img src="./Exergy_definition/pasted_image.png" width="350"><br>
+Another example is presented in <a href="mendeley://library/document/c9054687-0f0b-4ef3-98d1-597f99b1fbd8" title="(Wall, 2009)" class="mendeley">(Wall, 2009)</a>,  using a similar method  (and different notation) for the calculation of exergy of the iron in the Swedish ore. Here the formulation was<br>
+<img src="./Exergy_definition/equation022.png"><br>
+considering Fe<sub>3</sub>O<sub>4</sub> as the substance present in the RE and the Fe<sub>2</sub>O<sub>4</sub>	as the substance present in the Ore. the result obtained shows some difference with that reported in <a href="http://www.exergoecology.com/excalc/index_html/new_calc_exergy" title="the exergoeconomic portal" class="http">the exergoeconomic portal</a>.	<br>
+In general, the chemical potential of a system cannot be entirely converted to work, because the products of reaction must be at their respective environmental concentrations and chemical potentials at T<sub>0</sub> and P<sub>0</sub>. The most of work obtainable when the equilibrium is stablished is the difference between the values of Gibbs fuction for the system and the environment <a href="mendeley://library/document/045cd8a5-34dc-40ea-ad42-e920652bfc00" title="(Sciubba, 2005)" class="mendeley">(Sciubba, 2005)</a> <a href="mendeley://library/document/3ad4b1a5-fcb1-4ed4-9d9d-11a91c9984ef" title="(Sciubba &amp; Wall, 2007)" class="mendeley">(Sciubba &amp; Wall, 2007)</a> .
+</p>
+
+
+						<!--  -->
+						
+						<h3 id="843386">Chemical exergy of streams (Mixtures)</h3>
+						<p>
+According to <a href="mendeley://library/document/6edab843-17d6-4e45-b66c-885eab0cd9b1" title="(Querol, Gonzalez-Regueral, &amp; Perez-Benedito, 2013)" class="mendeley">(Querol, Gonzalez-Regueral, &amp; Perez-Benedito, 2013)</a>, the chemical exergy of a <b>stream</b> can be expressed as <br>
+<img src="./Exergy_definition/equation023.png"> <br>
+However it is pointed out that  other publications include a second addend <br>
+<img src="./Exergy_definition/equation024.png">  <br>
+which expresses the exergy destroyed by mixing, but when the <b>entropy</b> used for the calculation of the <b>physical exergy</b> corresponds to that of the <b>whole stream</b> (as in the most of simulators), the mixing effect is already considered, thus this addend <b>would not be necessary.</b>
+</p>
+
+					<br><br>
+				</div>
+            </div>
+            <br>
+            <div class="visualClear"><span></span></div>
+
+		<!--  -->
+			<!--  -->
+				<!-- <b>Attachments:</b> -->
+				<!-- <table> -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation.png'>equation.png</a></td><td>&nbsp;</td><td>622b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation.tex'>equation.tex</a></td><td>&nbsp;</td><td>29b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation001.png'>equation001.png</a></td><td>&nbsp;</td><td>918b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation001.tex'>equation001.tex</a></td><td>&nbsp;</td><td>37b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation002.png'>equation002.png</a></td><td>&nbsp;</td><td>266b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation002.tex'>equation002.tex</a></td><td>&nbsp;</td><td>3b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation003.png'>equation003.png</a></td><td>&nbsp;</td><td>279b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation003.tex'>equation003.tex</a></td><td>&nbsp;</td><td>3b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation004.png'>equation004.png</a></td><td>&nbsp;</td><td>1.31kb</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation004.tex'>equation004.tex</a></td><td>&nbsp;</td><td>99b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation005.png'>equation005.png</a></td><td>&nbsp;</td><td>332b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation005.tex'>equation005.tex</a></td><td>&nbsp;</td><td>6b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation006.png'>equation006.png</a></td><td>&nbsp;</td><td>334b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation006.tex'>equation006.tex</a></td><td>&nbsp;</td><td>6b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation007.png'>equation007.png</a></td><td>&nbsp;</td><td>325b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation007.tex'>equation007.tex</a></td><td>&nbsp;</td><td>6b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation008.png'>equation008.png</a></td><td>&nbsp;</td><td>331b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation008.tex'>equation008.tex</a></td><td>&nbsp;</td><td>7b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation009.png'>equation009.png</a></td><td>&nbsp;</td><td>674b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation009.tex'>equation009.tex</a></td><td>&nbsp;</td><td>28b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation010.png'>equation010.png</a></td><td>&nbsp;</td><td>266b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation010.tex'>equation010.tex</a></td><td>&nbsp;</td><td>3b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation011.png'>equation011.png</a></td><td>&nbsp;</td><td>264b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation011.tex'>equation011.tex</a></td><td>&nbsp;</td><td>3b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation012.png'>equation012.png</a></td><td>&nbsp;</td><td>907b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation012.tex'>equation012.tex</a></td><td>&nbsp;</td><td>47b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation013.png'>equation013.png</a></td><td>&nbsp;</td><td>739b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation013.tex'>equation013.tex</a></td><td>&nbsp;</td><td>29b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation014.png'>equation014.png</a></td><td>&nbsp;</td><td>750b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation014.tex'>equation014.tex</a></td><td>&nbsp;</td><td>59b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation015.png'>equation015.png</a></td><td>&nbsp;</td><td>528b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation015.tex'>equation015.tex</a></td><td>&nbsp;</td><td>40b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation016.png'>equation016.png</a></td><td>&nbsp;</td><td>281b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation016.tex'>equation016.tex</a></td><td>&nbsp;</td><td>12b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation017.png'>equation017.png</a></td><td>&nbsp;</td><td>439b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation017.tex'>equation017.tex</a></td><td>&nbsp;</td><td>15b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation018.png'>equation018.png</a></td><td>&nbsp;</td><td>1.03kb</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation018.tex'>equation018.tex</a></td><td>&nbsp;</td><td>52b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation019.png'>equation019.png</a></td><td>&nbsp;</td><td>1.13kb</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation019.tex'>equation019.tex</a></td><td>&nbsp;</td><td>64b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation020.png'>equation020.png</a></td><td>&nbsp;</td><td>789b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation020.tex'>equation020.tex</a></td><td>&nbsp;</td><td>20b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation021.png'>equation021.png</a></td><td>&nbsp;</td><td>1.53kb</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation021.tex'>equation021.tex</a></td><td>&nbsp;</td><td>105b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation022.png'>equation022.png</a></td><td>&nbsp;</td><td>2.18kb</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation022.tex'>equation022.tex</a></td><td>&nbsp;</td><td>119b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation023.png'>equation023.png</a></td><td>&nbsp;</td><td>585b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation023.tex'>equation023.tex</a></td><td>&nbsp;</td><td>34b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation024.png'>equation024.png</a></td><td>&nbsp;</td><td>755b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation024.tex'>equation024.tex</a></td><td>&nbsp;</td><td>25b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation025.png'>equation025.png</a></td><td>&nbsp;</td><td>4.98kb</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation025.tex'>equation025.tex</a></td><td>&nbsp;</td><td>425b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation026.png'>equation026.png</a></td><td>&nbsp;</td><td>543b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation026.tex'>equation026.tex</a></td><td>&nbsp;</td><td>26b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation027.png'>equation027.png</a></td><td>&nbsp;</td><td>1.86kb</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation027.tex'>equation027.tex</a></td><td>&nbsp;</td><td>136b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation028.png'>equation028.png</a></td><td>&nbsp;</td><td>1.11kb</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation028.tex'>equation028.tex</a></td><td>&nbsp;</td><td>81b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation029.png'>equation029.png</a></td><td>&nbsp;</td><td>879b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/equation029.tex'>equation029.tex</a></td><td>&nbsp;</td><td>55b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Exergy_definition/pasted_image.png'>pasted_image.png</a></td><td>&nbsp;</td><td>32.2kb</td></tr> -->
+    		<!--  -->
+			<!-- </table> -->
+			<!--  -->
+		<!--  -->
+
+        </div>
+        <div id="disqus_thread"><span></span></div>
+
+    </div>
+    <div id="mw-navigation">
+        <h2>Navigation menu</h2>
+        <div id="mw-head">
+            <div id="left-navigation">
+                <div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+                    <h3 id="p-namespaces-label">Namespaces</h3>
+                    <ul>
+                        <li id="ca-nstab-main" class="selected"><span>TechNotes</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="right-navigation">
+                <div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+                    <h3 id="p-views-label">Views</h3>
+                    <ul>
+                        <div id="p-search" role="search">
+                            <form action="https://www.google.com/search" method="GET" name="searchForm" id="searchForm" enctype="application/x-www-form-urlencoded" >
+
+							<div id="simpleSearch">
+							<input name="sitesearch" value="grimdorlf.github.io" type="hidden">
+                            <input id="searchInput" name="q" results="0" placeholder="Search TechNotes..." title="Search in TechNotes..." tabindex="1" autocomplete="off" type="search">
+                            <input id="searchButton" name="go" value="Go" title="Go to a page with this exact name if it exists" class="searchButton" type="submit">
+							</div>
+
+							<div class="suggestions"><div class="suggestions-results"><span></span></div></div>
+                            </form>
+					    </div>
+
+                    </ul>
+                </div>
+                <div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+                    <h3 tabindex="0" id="p-cactions-label"><span>Actions</span><a tabindex="-1" href="#"></a></h3>
+                    <div class="menu">
+                        <ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="collapsible-nav" id="mw-panel">
+            <div id="p-logo" role="banner">
+                <a style="background-image:url(logo.png); background-size: contain;" href="./About.html" title="Visit the main page"><span></span></a>
+            </div>
+            <div class="portal first persistent" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+                <h3 id="p-navigation-label">Navigation</h3>
+                <div class="body">
+                    <ul>
+						<ul>
+<li><a href="./About.html" title="About" class="page">About</a></li>
+<li><a href="./Absorption_chillers.html" title="Absorption chillers" class="page">Absorption chillers</a></li>
+<li><a href="./Amostragem_Carvão.html" title="Amostragem Carvão" class="page">Amostragem Carvão</a></li>
+<li><a href="./Chemical_Exergy.html" title="Chemical Exergy" class="page">Chemical Exergy</a></li>
+<li><a href="./Co-firing.html" title="Co-firing" class="page">Co-firing</a></li>
+<li><a href="./Cogeneration.html" title="Cogeneration" class="page">Cogeneration</a></li>
+<li><a href="./Designing_processes.html" title="Designing processes" class="page">Designing processes</a></li>
+<li><a href="./Economic_Analysis.html" title="Economic Analysis" class="page">Economic Analysis</a></li>
+<li><a href="./Exergoeconomics.html" title="Exergoeconomics" class="page">Exergoeconomics</a></li>
+<li><a href="./Exergy_applications.html" title="Exergy applications" class="page">Exergy applications</a></li>
+<li><a href="./Exergy_balance.html" title="Exergy balance" class="page">Exergy balance</a></li>
+<li><b>Exergy definition</b></li>
+<li><a href="./Exergy_efficiency.html" title="Exergy efficiency" class="page">Exergy efficiency</a></li>
+<li><a href="./Expert_systems.html" title="Expert systems" class="page">Expert systems</a></li>
+<li><a href="./Finances.html" title="Finances" class="page">Finances</a></li>
+<li><a href="./Glossary.html" title="Glossary" class="page">Glossary</a></li>
+<li><a href="./Peat.html" title="Peat" class="page">Peat</a></li>
+<li><a href="./Sankey_Diagram.html" title="Sankey Diagram" class="page">Sankey Diagram</a></li>
+<li><a href="./Simulation_software_comparison.html" title="Simulation software comparison" class="page">Simulation software comparison</a></li>
+<li><a href="./Steam_turbines.html" title="Steam turbines" class="page">Steam turbines</a></li>
+<li><a href="./Termelétricas_a_carvão.html" title="Termelétricas a carvão" class="page">Termelétricas a carvão</a></li>
+<li><a href="./Thermoeconomics.html" title="Thermoeconomics" class="page">Thermoeconomics</a></li>
+</ul>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="portal">
+            	<div style="display: block;" class="body">
+            		<ul id="p-tb-list">
+                        <li><a href="./index.html" title="Index">Index</a></li>
+                        <li><a href="./About.html" title="About">About</a></li>
+                        <li><a href="./Contact Info.html" title="Contact Info">Contact Info</a></li>
+            		</ul>
+            	</div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" role="contentinfo">
+        <ul id="footer-places">
+            <li id="footer-places-about"><a href="./About.html" title="About">About TechNotes</a></li>
+            <li id="footer-places-disclaimer"><a href="./General_disclaimer.html.html" title="General disclaimer">Disclaimers</a></li>
+            <li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by/3.0/">Attribution 3.0 Unported</a> unless otherwise noted.</li>
+        </ul>
+		<ul id="footer-icons" class="noprint">
+				<li id="footer-copyrightico">
+					<a href="http://creativecommons.org/licenses/by/3.0/"><img src="ccby_88x31.png" alt="Attribution 3.0 Unported" height="31" width="88"></a>
+			</li>
+		</ul>
+    </div>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">top</button>
+
+<script>
+//Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+<script>
+$(document).ready(function () {
+    'use strict';
+    /* Set up search */
+    $.getJSON('/searchIndex.json', function (response) {
+	    var index, store;
+        // Create index
+        index = lunr.Index.load(response.index);
+        // Create store
+        store = response.store;
+        // Handle search
+        $('input#searchInput').on('keyup', function () {
+            // Get query
+            var query = $(this).val();
+            // Search for it
+            var resultdiv = $('div.suggestions');
+            if(query === ''){
+                /*resultdiv.empty();*/
+                resultdiv.hide();
+            }
+            else {
+                var result = index.search(query);
+                // Output it
+                if (result.length === 0) {
+                    // Hide results
+                    resultdiv.hide();
+                } else {
+                    // Show results
+                    var subresultdiv=$('div.suggestions-results')
+                    subresultdiv.empty();
+                    for (var item in result) {
+                        var ref = result[item].ref;
+                        var searchitem = '<a class="mw-searchSuggest-link" href="' + ref + '"><div class="suggestions-result">' + store[ref].title + '</div></a>';
+                        subresultdiv.append(searchitem);
+                    }
+                    resultdiv.show();
+                }
+            }
+        });
+    });
+	tocbot.init({
+  		tocSelector: '.js-toc',
+  		contentSelector: '.js-toc-content',
+  		headingSelector: 'h2',
+	});
+});
+/* autohide search box */
+$(document).mouseup(function(e) {
+    var container = $("div.suggestions");
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+        container.hide();
+    }
+    var searchbox = $('div#p-search');
+    if (searchbox.is(e.target) || searchbox.has(e.target).length !== 0) {
+        container.show();
+    }
+});
+
+
+</script>
+<noscript>Please enable JavaScript to get search, toc, comments and other stuff.</noscript>
+</body>
+</html>

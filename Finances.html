@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html dir="ltr" class="client-js" lang="en">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>Finances</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+	<meta name="theme-color" content="#ffffff">
+    <link rel="copyright" href="http://creativecommons.org/licenses/by/3.0/">
+    <link rel="stylesheet" href="wikdorlf.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/3.0.2/tocbot.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/3.0.2/tocbot.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.1.1/lunr.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/highlight.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/languages/dos.min.js"></script>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.5.0/styles/github.min.css">
+
+	<script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr ns-0 skin-vector action-view vector-animateLayout">
+    <div id="mw-page-base" class="noprint"><span></span></div>
+    <div id="mw-head-base" class="noprint"><span></span></div>
+    <div id="content" class="mw-body" role="main">
+        <a id="top"></a>
+        <div id="mw-js-message" style="display:none;"></div>
+        <h1 id="firstHeading" class="firstHeading" lang="en"><span dir="auto">
+		Finances
+		</span></h1>
+        <div id="bodyContent">
+            <div id="mw-content-text" dir="ltr" class="mw-content-ltr" lang="en">
+				  <div class="js-toc"><span></span></div>
+				  <div class="js-toc-content">
+				  <!-- using content splitup instead of the whole page.content to add id to headers for the TOC to work -->
+				  <!-- these IDs are for TOC and they are lame but they work. ideally zim would provide a random function -->
+						<!-- <h1 id="278116">Finances</h1> -->
+						
+						
+						<p>
+Created Saturday 02 May 2015<br>
+<span class="zim-tag">@finances</span> <br>
+Video lectures from University of Michigan (Coursera): <a href="file:///D:/Copy/00_BIBLIO/COURSES/Introduction%20to%20Finance" title="Folder" class="file">Folder</a>
+</p>
+
+
+						<!--  -->
+						<h2 id="3522">Announcements</h2>
+						
+						
+						<!--  -->
+						
+						<h3 id="35543354">Welcome!</h3>
+						<p>
+Hi All: <br>
+Welcome to Introduction to Finance! The class has just launched and will be on for the next 15 weeks. This is the eighth offering of the course and it is going strong thanks to all your involvement and the team work at both Coursera and University of Michigan. We have worked to make your experience challenging, productive, and fun. I strongly encourage you to carefully read the Course Syllabus accessible on the left panel and watch the Welcome video, also accessible on the left panel under Video Lectures. You will notice that the Welcome Video is in two parts; an original one created at the first launch of this class almost three years ago, and the other a brief update for the subsequent "editions" of the class that highlights the main changes made by us following student feedback. I chose to follow the tradition in the textbook business of the preface to a new edition highlighting the changes. I feel that you will get a good sense of the (short) history of this class if you watch both videos. I also happen to like the original one. We of course continue to make changes to the course based on feedback from past participants and our own new insights. Thanks to Coursera's efforts, all videos have closed captioning in English; and crowd sourcing has created closed captioning in other languages for some of the videos as well. And this effort is now getting even more emphasis at Coursera. Similarly, the launch of the mobile platform has also increased access to the course worldwide. <br>
+I will attempt to expose you to the beauty of finance, but you will learn the most from each other. Use the forums to do so. Owen Henkel has graciously agreed to assist me again in this offering and will monitor the forums regularly. We also have a few new students of mine from UM who will work with Owen. They are all very dedicated and knowledgeable individuals and I am grateful for their help. Their task is challenging because they are expected to navigate the forums but intervene or help out only when really needed. Technical issues will be addressed by Coursera. The Syllabus contains a lot of information about the class; when in doubt about something, refer to it. And, again, use each other as resources to clarify issues ranging from how to use a browser to what is life really all about. [The URL link to the online book by Ivo Welch keeps changing and does not work on some browsers. I have tried several times to change it, but problems persist. In case you experience problems, please just google his name and you will be able to get to the site of his online book.] <br>
+This course has a lot of assessments/assignments because that ultimately is the only way to learn. I therefore use problems to motivate all the work I present in the videos. The assignments are by design not easy, though some questions are clearly easier than others. I encourage you very strongly to learn from each other but not to share or look for answers to the assignments or the final exams; it really does not help our learning. <br>
+You must recognize that even though finance appears to be very precise, it is ultimately an art form. Thinking through a problem/situation is therefore key before you try and "solve" it. Focus on the framework and use the problems to reinforce your understanding of the same. <br>
+Most importantly, keep smiling, especially when things get tough. Learning happens when you are happy. And, ultimately, happiness is a state of mind that is largely under our control. 
+</p>
+
+
+						<!--  -->
+						
+						<h3 id="45803448">The First Week</h3>
+						<p>
+Hi All: <br>
+The first week of the course is over. I hope it has been an exciting experience for all of us. Our team has been monitoring the forums and keeping me updated. And, of course, the Coursera team is vigilant and managing multiple courses. <br>
+I want to emphasize a few things before getting into the content that we are working on. First, please participate in the forums and learn from each other. I believe that a teacher's role is more like a mentor, and that learning happens in many different ways. While it is ultimately a personal experience, we need to learn from each other. For example, we can teach each other a lot about the right approach to solving problems, without sharing the "solutions." Second, I want to clarify the structure of the class, again. I will release two weeks' worth of videos, related materials and assignments at a time, but then give one week of assimilation each time as well. Finally, a clarification about the grading scheme; to get a certificate you need to score a minimum of 70% on 5 out of 9 assignments and a minimum of 60% on the final. You have two attempts at each, and we automatically choose the higher score. You of course still have some time to sign up for the Signature Track (ST). I want to emphasize that this decision is entirely voluntary. <br>
+Now for some content-related stuff. The first week of videos (or chapter one of the videos) was relatively easy. This is by design so that you familiarize yourself with the issues we will tackle and the vocabulary of finance. Please do the assignment as you go along, even though it is not due for a while. Finance is all about the real world and practice is the main way we learn this stuff. This next week covers TVM, spreadsheets and, yes, another assignment. I recognize that some questions in the assignments are challenging. They are supposed to be, and this will be the pattern throughout the course. I believe that eventually no one can teach someone else; we can just hope to coach/nudge each other to learn. [As you work your way through this course, you will probably avail of other resources. As I have indicated earlier, Ivo Welch has a free book accessible on the web; he has advised me that editions 2 or 3 are improved versions of his book. So please refer to these if you choose to visit his site. Of course, all the free materials are only accessible on the web and should not be downloaded, circulated or redistributed.] <br>
+Talking about coaching, I must emphasize an important generic aspect of the assignment questions; they appear difficult because real life is messy and ambiguous and like one big "word problem." I know you will probably not realize it until you have done enough applications, but if you understand the fundamental building blocks I try to emphasize in class, any problem you see on the assignments or beyond is simply a combination of these same blocks. For example, I want you to fully understand what a loan is; and some questions in Assignment 2, though seemingly difficult, are very similar to the loan example I do in class. The difficulty arises in taking a real world problem and breaking it up into pieces that you can apply the building blocks to; so, in a very concrete sense, finance helps you make sense of a seemingly complicated world. But you have to practice to see the various combinations of blocks in various applications; draw a time line, understand what is going on, and then try and "solve" the problem. [The reason for the quotes is because looking for the right answer is not what usually empowers us; it is the approach that matters. In any event, there are really no right answers in life, just thoughtful versus knee-jerk ones.] <br>
+On a more practical level, and regardless of the problem in the assignments or elsewhere, remember that value always comes from the future (not the past, unless it affects the future); and though we typically make decisions today, learn to time travel on the time line. Talking about time lines, use excel to solve at least some of the problems without using the built in formulae/functions. And watch Matrix! If you understand that movie, finance will be a piece of cake. <br>
+While I may make all of this sound easy, it is not. Education, if done right, is an investment and not consumption. And often we do not invest because it takes effort and is painful; and so does loving someone. But only investments allow you to enjoy life for many years. I am confident that you can learn this stuff; if I could, so can you. 
+</p>
+
+
+						<!--  -->
+						
+						<h3 id="25003255">Module 1: Assimilation</h3>
+						<p>
+Hi All: <br>
+These past two weeks we have been exposed to both the concepts and practical applications of TVM. While I try to de-emphasize the role of calculations, it is only to make us focus on what is important -- the framework. But I strongly encourage you to use spreadsheets once you understand what is going on; and doing some problems without using the built-in formulae is actually quite useful. <br>
+We are following every two weeks of material with one week of catch up time, time for assimilation, and time to complete the two assignments. As you do the assignments, please read the questions carefully before answering them. Most of the questions involve multiple steps and you need to make sure you are working through all the steps. Given the large number of students in this class, we have to use technology to do all the grading. We however have tried to give you partial credit wherever possible. This actually has led to confusion among some of you about your scores; just because you get a green check mark next to a graded question does not mean that you scored full points. In spite of this, we would rather give you partial credit than not. We are in fact trying to think through ways in which we could make the grading more informative for you. The assessment part of MOOCs classes is very time consuming for people offering these classes; among other things, because of copyright issues we cannot simply take questions from textbooks. We have to create multiple versions of our own questions and figure out ways to break them down and have them graded using technology. I always create my own assignments and exams anyway. This however also means that while learning from each other is key and is encouraged, please do not share answers to questions. Needless to say, it defeats the purpose and the forums are therefore monitored. We too will not post answers to the questions we have created, but we will post a way to approach the most difficult problem in each assignment after the due date. <br>
+I hope the first two weeks have been fun and productive. Finance is a way of thinking and the only way to make it part of your being is by practice. So do the assignments and think through what you are doing. <br>
+One last, but potentially important, issue. At the beginning of every week's worth of material I recap the previous week. I have therefore already released the first video of week 3, titled 3.1 Recap of Week 2. 
+</p>
+
+
+						<!--  -->
+						
+						<h3 id="36103355">The Next "Module"</h3>
+						<p>
+Hi All: <br>
+These past three weeks we have been exposed to both the concepts and practical applications of TVM. While I try to de-emphasize the role of calculations, it is only to make us focus on what is important -- the framework. But I strongly encourage you to use spreadsheets once you understand what is going on; and doing some problems without using the built-in formulae is actually quite useful. <br>
+As promised, I am releasing the next block of two week's worth of material. I had already released Video 3.1 Week 2 Recap. <br>
+This block of content is all about decision-making criteria; an extremely important topic, in my view. Value creation is not easy, but a surprisingly large fraction of us use decision criteria that are myopic and may actually be value-destructive. This block, two weeks' worth of video and related assignments, will expose you to some of the fundamental reasons why some firms are repeatedly able to create value, while others do so for only short periods of time. Some of the calculations may seem easy and mechanical; but that is partly because these are simple extensions of what we have already learned. But understanding what the various widely used criteria really mean, and why some criteria are better than others, are the really important lessons here. And of course we again attempt to introduce everything with practical applications. <br>
+One final, but important, issue related to this next block of time. In the last set of videos, we will spend some time on the estimation of cash flows. This is an important component of project analysis, but requires an exposure to accounting. Since we do not have enough time to cover all the details, and the fact that accounting conventions vary across different countries, I focus on the most important cash flow estimation principles. I however strongly recommend that you take a class in accounting and/or learn it on your own if you want to know more about cash flow estimation. Accounting is the language of business and some exposure, beyond this class, will be helpful.<br>
+Also, although I do cover all the specifics in class, to help you execute some of the cash-flow based assignment questions, we have prepared a Sample Cash Flow Template that I have posted as a note. The note uses a fairly rich example to demonstrate the creation of a cash flow model, but realize that every template is just that. It is a guide, not something to be used in all situations without figuring out what the situation demands. Having said that, the example tries to capture the main elements of the cash flows of most businesses. I therefore believe that you will find it very useful to recreate the example in a spreadsheet using all the notes provided in the template. 
+</p>
+
+<p>
+Finally, as you do the assignments, please review the instructions carefully. Since we have so many students, all assignments are graded electronically. We have tried to repeatedly highlight the various conventions that you need to use in entering your answers; typically at the beginning of each assignment and we try to repeat them in every question. We are reviewing all questions, again, but meanwhile, when in doubt, review the Syllabus, especially pages 5-7, sections titled "Some Conventions" and "Important Guidelines." 
+</p>
+
+<p>
+I know that videos and assignments can get to be a lot of work. But if you stay focused on why you are doing specific things, it all will make sense. The beauty of finance is that it all fits together. 
+</p>
+
+<br>
+
+<p>
+Gautam <br>
+Sun 22 Feb 2015 9:00 PM PST
+</p>
+
+
+						<!--  -->
+						
+						<h3 id="19523183">Module 2: Assimilation</h3>
+						<p>
+Hi All: <br>
+This week is the week to assimilate the module 2 material and to finish up Assignments 3 and 4. The past five weeks have been a lot of work on TVM and decision-making. I know that the pace of the class is fast, and some of the assignment questions are difficult, but I want you to be exposed to the fundamentals of finance. That means we will have to continue to keep moving at a brisk pace. <br>
+Having said that, and based on the the activity in the forums, I would like to make some suggestions. I hope these are helpful to you. The first is a simple suggestion, but sometimes can be tough to follow. Please read the instructions provided in each assignment as well as in the syllabus on how to input your answers, especially when you have to input numbers. Do not use symbols, and input the numbers you arrive at. Given that you could be rounding off at various steps, the grading is set up to accept a range of answers close the correct ones. And be patient before hitting the submit button. There is no hurry here. Second, and more important, is the idea of breaking each problem up into bite-size pieces. Draw timelines and follow conventions that are needed to place numbers on the same; for example, unless otherwise specified, cash flows occur at the end of a period. To help you think through problems, I have posted explanations for one of the tougher problems each from Assignments 1 and 2 under the Documents Link on the left hand side of the main page. I am grateful to my assistants at our university for preparing them. <br>
+Most of us can remember formulae, etc., or google most of the stuff we talk about in class. But the one thing you cannot google is how to think. These problems are an attempt, and I hope a successful one, at making you think in a logical way. The day we could google how to think, why are we here, and so on, life would probably lose its meaning. 
+</p>
+
+
+						<!--  -->
+						
+						<h3 id="19003166">The Next Module: Bonds & Stocks</h3>
+						<p>
+Hi All: <br>
+The past six weeks have involved a lot of work on TVM and decision-making. The next module (two weeks of videos and exercises) is all about understanding the key ways to finance projects/firms: bonds (debt) and stocks (equity). This whole topic is important both from a corporate and personal standpoint. I will cover the basics and also try and introduce you to real life data using . You will see for yourself how finance is so real and applicable to everything we do. You will also realize why a class on valuation needs to provide some exposure to understanding financial instruments. The good news is that all forms of financing can be viewed as having different combinations of bond- and stock-like features. <br>
+As you start work on this module, you may find most of the assignment questions to be simpler; they are, but only because everything eventually is an application of the fundamental building blocks of TVM. I want to caution you to draw time lines and fully understand the question before calculating stuff. Even a minor error in a seemingly simple calculation can create problems. Also, try and use the RATE function in Excel to calculate bond yields. You now know enough about spreadsheets to be able to start using new functions. Remember though that you can always use common sense and algebra to solve any problem. <br>
+I recognize that it must be difficult for you to keep up with the workload of this class, what with all your other responsibilities. We appreciate your hard work and hope that it will be worthwhile in the end. Also, there are five assignments still due and many people find some of the later assignments easier than the early ones. This is partly a matter of taste, but also because the learning curve in finance is steep and, once you get the hang of things, life becomes easier. 
+</p>
+
+
+						<!--  -->
+						
+						<h3 id="14933133">Module 3: Assimilation</h3>
+						<p>
+Hi All: <br>
+These past two weeks have been about bonds and stocks. I encourage you to try and absorb the material and then attempt Assignments 5 &amp; 6 during the upcoming week. In general, the idea of providing an assimilation week in every module has gone over well, though it has led to an extension of the class. My goal has been to provide you sufficient exposure to key concepts and applications of finance and then let you work through problems to really learn the material. This time around, the problems may appear simpler because ultimately the valuation of bonds and stocks is an application of the core principles of TVM. <br>
+As I have indicated earlier, the main goal of this class is to value real assets that produce goods and services. It is however important to understand the valuation of the financial instruments that help finance these assets: debt and equity. As you will see soon, among other things, this help will us understand the theoretical underpinnings and practical measurement of the cost of capital. As an important aside, the understanding of bonds and stocks, combined with our exposure to risk in Module 4, will help us understand the basics of our own personal investment strategies. <br>
+So please do spend some time thinking through the issues and doing the assignments as it will empower you to understand the workings of financial markets and help you analyze both corporate and personal decisions. 
+</p>
+
+
+						<!--  -->
+						
+						<h3 id="35833320">Risk, Return, and Statistics!</h3>
+						<p>
+Hi All: <br>
+We are past the mid-point of this class. Hopefully we have developed a good sense of how to value projects/ideas or bonds and stocks in a world with certainty. We have talked about risk and also had to deal with it, but mostly indirectly. The next module (and beyond) is in some sense all about risk. <br>
+If you recall, I have repeatedly emphasized that there will be times when we will need to cover material that is not typically thought of as finance. But since finance is an applied discipline, apart from economics (its mother discipline) I emphasized that accounting (the language of business) is important to understand. We covered some general principles of cash flow estimation but, to really understand all details of this topic, you need to take a class on accounting (ideally for the region of the world you are situated in). I believe this class provided you sufficient exposure to the issues that you need to worry about. <br>
+To deal with risk, we have to understand statistics. To me, there is really no distinction between the two. The next module is essentially a crash course in statistics and risk, clearly again at a fundamental/introductory level. The good news is that finance is so awesome that you will enjoy learning statistics within its context. Our exposure to statistics is driven by a need and therefore we will be focused on certain aspects of statistics, which is a huge and growing field. I hope you will choose to learn more on your own, either through an online class or via the traditional route or on your own. I encourage you to do so because data are everywhere and we need to understand statistics to even begin to comprehend the world around us. Our beliefs are influenced by data, but most data we are exposed to are anecdotal, and an understanding of statistics is critical to figuring out what the data are really telling us. <br>
+This module is all about understanding statistics and risk, and the relation between risk and return. This whole topic is very important to figuring out the appropriate discount rate for a project/firm/stocks/bonds. As you start to work on this module, and if you have not been exposed to statistics before, I strongly encourage you to review and do the problems in the Note titled Review of Statistics. I also encourage you to use built-in statistical functions in spreadsheets to do these problems before attempting the assignments. The good news again is that you can easily do all calculations using the formulae, and without using spreadsheets. But once you understand the formulae it is very useful to use spreadsheets to do the calculations. <br>
+As you work on the assignments, you may find most of the assignment questions to be simpler because we are covering the basics of statistics. And many questions therefore are about calculating various things. I want to caution you however to be careful especially when the issue raised in a question relates to interpreting data rather than just calculating stuff. <br>
+I encourage you to keep working hard; after this module we will be putting things together to develop a holistic understanding of valuation. I also want to address an issue that has been raised in this class and all other online classes. While you will get a certificate if you fulfill all the requirements laid out in the syllabus, you may choose to learn parts and/or all of it at your own pace with (or without) submitting assignments. The class will be open to all of you for a total of 15 weeks regardless. 
+</p>
+
+
+						<!--  -->
+						
+						<h3 id="13743132">Module 4: Assimilation</h3>
+						<p>
+Hi All: <br>
+This week is the time to assimilate the module 4 material and to finish up Assignments 7 and 8. The past two weeks have been a bit different in that we have focused exclusively on risk and return. This is an extremely important aspect of valuation because understanding risk, how to measure it, and how it determines the cost of capital are all essential to valuation. It is one of the places in the course, however, that requires us all to take a little detour and brush up or learn Statistics. Although we do not need to know a ton of Statistics for our current purposes, it is a field that is becoming more and more important in life. This trend is actually very good because the best way to make decisions is to be data-driven rather than opinion-driven. However, to be able to comprehend what the large amounts of data are trying to tell us, we need to learn Statistics. I would therefore encourage you to use this week to really understand the few statistical concepts we have introduced in this class and use them to do the Assignments. At a future date, when you have the time and the inclination, do take a class on Statistics either at Coursera, another online portal, or at a regular college. The good news is that parts of Statistics can be learned on your own as it is very structured and logical. 
+</p>
+
+
+						<!--  -->
+						
+						<h3 id="24303245">Last Module: The End is Close!</h3>
+						<p>
+Hi All: <br>
+I cannot believe it, but I have just released the last module for the class. This module is unique in multiple ways. The first set of videos try to give you an overall sense of valuation. In line with this goal, there is a “mega” example at the end, and I pause after every question related to the example. You will therefore find the video material broken up into many more segments than usual for our class. Please go through the complete example, testing your knowledge before viewing how we do it together. Assignment 9 relates to this material, but with an important difference. We are trying to put together stuff we have learned in this entire class and therefore you need to revisit most of what we have learned. Another important and related issue is that thinking through a problem is even more important in this assignment and in life in general. This module, more than any other, reflects the fact that finance is more art than science; or, once you understand the science, it is largely the art that helps you make good decisions. It is natural to want to jump to calculate stuff; but thinking before jumping is important. Once you think through the issues, the calculations become quite simple; again, not just here, but in life as well. <br>
+The final set of videos, following the Valuation stuff, have two main goals: reflecting on what we have learned, the key issues, and then what else you may want to learn via formal classes (F2F or online), or on your own, based of course on your personal interests and goals. Not surprisingly, finance plays an important role there as well. There is no corresponding assignment for these videos because you need some time to review stuff for the final. <br>
+I will make the final available on May 4, 2015. At this time I want you to be aware of a few things about the exam. You will have two attempts at the final as well, and you will need to score at least 60% on one of them to qualify for a certificate (in addition to scoring at least 70% on 5 out of the 9 assignments). But each attempt at the final will be timed. To accommodate your busy schedules, we will allow you two weeks to attempt the exam, with the last day being May 18, 2015. While there is no restriction on when you can start the second attempt, you are strongly encouraged to wait and reflect before giving the exam a second shot. 
+</p>
+
+
+						<!--  -->
+						<h2 id="46172316">Week 1</h2>
+						
+						<p>
+<a href="file:///D:/Copy/00_BIBLIO/COURSES/Introduction%20to%20Finance/1.1%20Introduction%20Why%20Finance%20(1857).mp4" title="1.1 Introduction - why finance" class="file">1.1 Introduction - why finance</a><br>
+<ul>
+<li>Finance is the study of <b>Value</b>.</li>
+<li><b>Value</b> <b>creation</b> has two key components: <i>Time and uncertainty</i>.</li>
+<li><b>Many things</b> can be valued using a proper framework (enterprises, projects, human capital etc.).</li>
+</ul>
+<a href="file:///D:/Copy/00_BIBLIO/COURSES/Introduction%20to%20Finance/1.2%20Introduction%20Class%20Information%20(1645).mp4" title="1.2 Introduction - Information" class="file">1.2 Introduction - Information</a><br>
+<ul>
+<li>It is very important to understand that finances <b>is not focused</b> on results, rather on make the adequate <i>assumptions</i> to make decisions about the future.</li>
+<li>The main assumption in the examples is that competitive markets exists: When valuing something, <b>it</b> <b>is</b> <b>necessary</b> to know how <i>similar</i> things are valued.</li>
+<li><i>Prices</i> are <b>extremely</b> important for figuring out what the value of something should be.</li>
+<li>If prices <b>are not</b> good (they are not in a competitive market), they <b>are not so meaningful</b>.</li>
+<li>There is not a considerable resistance when compared to valuable things (ideas).</li>
+<li>Cash flow relatively <b>easy</b>.</li>
+</ul>
+<a href="file:///D:/Copy/00_BIBLIO/COURSES/Introduction%20to%20Finance/1.3%20Time%20Value%20of%20Money%20(TVM)%20(1212).mp4" title="1.3 Time value of money" class="file">1.3 Time value of money</a><br>
+<ul>
+<li>Every decision involves time and uncertainty.</li>
+<li>Terminology:
+<ul>
+<li><b>PV:</b> Present value (<b>$</b>)</li>
+<li><b>FV:</b> Future value (<b>$</b>)</li>
+<li><b>n:</b>   Number of periods (#)</li>
+<li><b>r:</b>    Interest rate (<b>%</b>)  <b>r&gt;0</b> (convention). it is <i>critical</i> to finances.</li>
+</ul>
+</li>
+<li>Recommended book: theory of interest by Irving Fisher (1930).</li>
+</ul>
+<a href="file:///D:/Copy/00_BIBLIO/COURSES/Introduction%20to%20Finance/1.4%20Simple%20Future%20Value%20(FV)%20(1447).mp4" title="1.4 Simple future value 1" class="file">1.4 Simple future value 1</a><br>
+<ul>
+<li>Time lines</li>
+</ul>
+<img src="./Finances/ditaa.png"><br>
+<ul>
+<li>The number periods <b>n </b>is generally expressed in <b>years,</b> as the interest rate <b>r </b>is expressed <i>annually</i><b>.</b></li>
+<li>Time <b>always</b> has an effect over value. two values <b>can not</b> be compared directly if they are in different periods.</li>
+<li>This effect is quantified <b>through</b> <b>r</b>. <i>Future Value= Initial Payment + Accumulated Interest</i></li>
+</ul>
+<div style='padding-left: 30pt'>
+<img src="./Finances/equation.png">
+</div>
+<a href="file:///D:/Copy/00_BIBLIO/COURSES/Introduction%20to%20Finance/1.5%20Simple%20FV...%20(1006).mp4" title="1.5 Simple future value 2" class="file">1.5 Simple future value 2</a><br>
+<ul>
+<li><i>Compounding</i> is the <b>rate</b> <b>r </b>applied on the <b>accumulated interest</b> (interest on interest) through a number of periods <b>n</b>. </li>
+</ul>
+<a href="file:///D:/Copy/00_BIBLIO/COURSES/Introduction%20to%20Finance/1.6%20Simple%20FV%20Example%20(1954).mp4" title="1.6 Simple FV example 1" class="file">1.6 Simple FV example 1</a><br>
+<ul>
+<li><b>Risk</b>, largely, is <b>responsible</b> for different interest rates.</li>
+</ul>
+<a href="file:///D:/Copy/00_BIBLIO/COURSES/Introduction%20to%20Finance/1.7%20Simple%20FV%20Example%202%20(541).mp4" title="1.7 Simple FV example 2" class="file">1.7 Simple FV example 2</a><br>
+<a href="file:///D:/Copy/00_BIBLIO/COURSES/Introduction%20to%20Finance/1.8%20Simple%20Present%20Value%20(PV)%20(1714).mp4" title="1.8 Simple present value PV" class="file">1.8 Simple present value PV</a><br>
+<ul>
+<li><b>PV</b> is more talked about than <b>FV</b>.</li>
+<li>PV is a little bit more important than FV for <b>decision</b> <b>making</b>.</li>
+<li>The relation between PV and FV is established by the formula:</li>
+</ul>
+<img src="./Finances/equation002.png"><br>
+<ul>
+<li>According to the formula, the <b>PV factor</b> would be  <img src="./Finances/equation003.png"></li>
+</ul>
+ (<b>lesser than 1</b>) and, on the the <b>FV factor</b> is <img src="./Finances/equation001.png"> (<b>greater than 1</b>).<br>
+<ul>
+<li>The fact that the <b>PV factor</b> is lesser than one, means that the value of something in the future will become <b>lesser</b> when brought today.  this process is called <i>discounting</i>. (r is greater than 0).</li>
+</ul>
+</p>
+
+
+						<!--  -->
+						<h2 id="129132938">Week 2</h2>
+						
+						<p>
+<a href="file:///D:/Copy/00_BIBLIO/COURSES/Introduction%20to%20Finance/2.1%20Recap%20Week%201%20(738).mp4" title="2.1 Recap Week 1" class="file">2.1 Recap Week 1</a><br>
+<ul>
+<li>There is an emphasis about that the finances is not focused in results (the answers are wrong), rather than <i>procedures, way of thinking and framework (assumptions)</i> to making decisions. It is because finances <b>is about the future</b> (unpredictable).</li>
+</ul>
+<a href="file:///D:/Copy/00_BIBLIO/COURSES/Introduction%20to%20Finance/2.2%20FV%20of%20Annuity%20Concept%20(1424).mp4" title="2.2 FV of Annuity Concept" class="file">2.2 FV of Annuity Concept</a><br>
+<ul>
+<li>Making decision based on <b>multiple</b> <b>payments</b> is more common than on a single payment.</li>
+<li><b>Annuity</b> is a special type of multiple payments, and is commonly denoted by the letter <b>C (Cash). </b>In excel is identified by the acronym <i>PMT</i>.</li>
+<li>There is general <b>convention</b> about annuity: <i>in time 0 there is not a cash flow </i>(it is supposed that the first payment occurs at the <b>end of first</b> period), thus <b>FV</b> value at <b>time 0 is 0. </b>See the following example:</li>
+</ul>
+</p>
+
+<p>
+<img src="./Finances/equation007.png"><br>
+<div style='padding-left: 30pt'>
+this table is equivalent to the following timeline:<br>
+<img src="./Finances/ditaa002.png">
+</div>
+ so, the calculation of FV of annuity C ifor 3 years is:<br>
+<div style='padding-left: 60pt'>
+<img src="./Finances/equation005.png">
+</div>
+<div style='padding-left: 30pt'>
+Thus, the general formula <i>for n periods</i> is  <img src="./Finances/equation008.png">
+</div>
+<a href="file:///D:/Copy/00_BIBLIO/COURSES/Introduction%20to%20Finance/2.3%20FV%20of%20Annuity%20Example%201%20(2008).mp4" title="2.3 FV of annuity example 1" class="file">2.3 FV of annuity example 1</a><br>
+<i>problem</i>: what will be the value of your portfolio at retirement if you deposit $<b>10 000</b> every year in a pension fund. You plan to retire in <b>40</b> years and expect to earn  <b>8</b>% on your portfolio?<br>
+<ul>
+<li>Using excel formulas, you obtain <b>FV=2.59 million </b>using the $10 000 as <i>pmt</i>, 40 as <i>n</i> and 8% as <i>rate</i>.</li>
+<li>This value is notably greater than 40 payments times $10 000 ($400 000) because of <b>compounding</b>.</li>
+<li>In this case (savings, investment), compounding is helping. However in the case of payments (as a credit) it is detrimental (hurts).</li>
+<li>It is important to clear the following concerns:
+<ul>
+<li><b>amount of money</b> is defined by <i>user.</i></li>
+<li><b>Number of periods</b> is defined by <i>user</i> <i>too</i>.</li>
+<li><i>Nobody</i> can determine the <b>interest rate </b>(it is about the future).</li>
+<li><b>Interest rate</b> is determined (choice) by the <i>user</i>, according to the level of <i>risk</i> that he or she assumes in his/her investment strategy.</li>
+<li>Higher the risk, higher the interest rate, but more likely that you are jumping all over the place because of volatility (example: the stock market).</li>
+<li>Lower the level of risk, safer the investment, but lesser the return because of the lower interest rate (example: bonds market).</li>
+<li>the <i>choice</i> of a interest rate should <b>match</b> the investment strategy (preferences of risk) of the user.</li>
+</ul></li>
+</ul>
+<a href="file:///D:/Copy/00_BIBLIO/COURSES/Introduction%20to%20Finance/2.4%20FV%20of%20Annuity%20Example%202%20(1016).mp4" title="2.4 FV of annuity example 2" class="file">2.4 FV of annuity example 2</a><br>
+<i>problem</i>: suppose you want to guarantee yourself $500 000 when you retire 25 years for now. How much must you invest each year, starting at the end of this year, if the interest rate is 8%?<br>
+<i>ans</i>: $6 840.<br>
+<ul>
+<li>The difference between 25 x $6 840 (~ $175 000 with r=0) and 500 000 is the effect of compounding.</li>
+<li>The 8% is coming from the market (externalities). <i>It is</i> <i>high</i> (never reached by a bank), meaning that it implies risk.</li>
+</ul>
+<a href="file:///D:/Copy/00_BIBLIO/COURSES/Introduction%20to%20Finance/2.5%20PV%20of%20Annuity%20Concept%20(838).mp4" title="2.5. PV of Annuity Concept" class="file">2.5. PV of Annuity Concept</a><br>
+<ul>
+<li>Following the same convention adopted for the FV of annuities, (<i>cash flow $0 at time 0</i>), an analogous example is done for <b>PV</b>:</li>
+</ul>
+<div style='padding-left: 30pt'>
+<img src="./Finances/equation004.png">
+</div>
+<ul>
+<li>In a similar way for FV, it can be deduced that the general formula for the <i>PV of an Annuity along n years</i> is:</li>
+</ul>
+<div style='padding-left: 120pt'>
+<img src="./Finances/equation006.png">
+</div>
+<a href="file:///D:/Copy/00_BIBLIO/COURSES/Introduction%20to%20Finance/2.6%20PV%20of%20Annuity%20Examples%20(1720).mp4" title="2.6. PV of Annuity examples" class="file">2.6. PV of Annuity examples</a><br>
+<i>Problem 1</i>: how much money do you need in the bank today so that you can spend $10000 every year for the next 25 years, starting at the end of this year. suppose r= <b>5%</b>. <i>ans</i>:  PV= $140 939.45<br>
+<img src="./Finances/ditaa001.png"><br>
+So, you need to deposit around <b>$141 000</b> <i>today</i>, in order to get <b>$10 000</b> each year during the next <b>25 years </b>(it differs from 25 x $10 000 = 250 000).
+</p>
+
+<p>
+<i>Problem 2: </i>you plan to attend a business school and you will be forced to take out $ 100 000 in a loan at <b>10%</b>. You want to figure out your yearly payments, given that you will have 5 years to pay back the loan.<br>
+<i>ans: </i><b>PMT= $26 380</b><br>
+These payments are <b>$6 380</b> <i>greater than</i> those without interest rate ($100 000/5 years= $20 000).<br>
+<ul>
+<li>In general, the interest rate of 10% is too high.  </li>
+<li>If it is one person in the whole market deciding the interest rate is a monopolist.</li>
+<li>A competitive market benefits the consumer (market for the people, not for few of them).</li>
+<li>It is supposed that 10% is coming from competition (the lowest rate among various choices).</li>
+</ul>
+<a href="file:///D:/Copy/00_BIBLIO/COURSES/Introduction%20to%20Finance/2.7%20A%20Loan%20The%20Power%20of%20Finance%20(2050).mp4" title="2.7. A Loan the power of finance" class="file">2.7. A Loan the power of finance</a><br>
+Example II: Loan amortization<br>
+Based on the earlier example, the amortization of the loan can be represented by the following table:<br>
+<div style='padding-left: 30pt'>
+<img src="./Finances/equation009.png">
+</div>
+<ul>
+<li>An important thing is that the <i>first row corresponds to the point 0</i>. It is because the <i>first payment (column 3) is done at the </i><b>end of first period</b> <b>(point 1)</b> and the loan occurs at the <b>beginning</b> of the same period <b>(point 0)</b>. Thus, the time line of the amortization is:</li>
+</ul>
+<div style='padding-left: 60pt'>
+<img src="./Finances/ditaa003.png">
+</div>
+<ul>
+<li>The interest rate (10%) is applied over the pending debt until the beginning of each period (column 2). <i>i.e. column 4 is the 10% of column 2.</i></li>
+<li>The pending debt at the <b>beginning</b> of period <b>n</b> corresponds to the value of the preceding period (column 2) minus its repayment (<i>supposed to be at the end of period n-1</i>).</li>
+<li>On the other hand, these values corresponds to the calculation of <b>PV</b> of the same annuity and r, changing the number of periods <b>n</b> by the <i>remaining number of periods </i>(i.e. like "move" the point 0 forward). It means for example, that <b>$83 620</b> (second row) is the <b>PV</b> of the annuity <b>$26 380</b> at a rate of 10% paid <i>during 4 periods</i>.   </li>
+<li>The interest is the price that you pay to use the money.</li>
+<li>Taking into the account that the annual payment remains <i>constant</i> along the timeline, the principal repayment of period n corresponds to the <b>difference</b> between its annual payment and the corresponding interest (<i>column 5= column 3 - column 4</i>).  </li>
+<li><i>You cannot add or multiply over the time because of compounding and the positive interest</i>. It means that the amount that you <b>owe</b> the bank at present moment (PV) is <b>$100 000, which is different than </b><i>5 x $26 380.</i></li>
+<li>All value is determined by standing at a point in time and looking <i>forward</i>.</li>
+<li>The best way to think about decision making is standing at <i>zero</i> and looking forward.</li>
+<li>you cannot make money by borrowing and lending. It means that the bank makes money <b>by the borrowing-lending rates difference</b>.</li>
+<li>Value cannot be created by exchanging money.</li>
+</ul>
+<a href="file:///D:/Copy/00_BIBLIO/COURSES/Introduction%20to%20Finance/2.8%20Compounding%20(1031).mp4" title="2.8. Compounding" class="file">2.8. Compounding</a><br>
+<ul>
+<li>Based on the same situation (a loan of $100 000 at 10% during 5 years), but considering now <b>monthly </b>payments. What are the monthly payment? and what is your <b>real</b> <b>annual interest rate? </b></li>
+<li>The timeline changed (<b>60</b> monthly payments).</li>
+</ul>
+<div style='padding-left: 30pt'>
+<img src="./Finances/ditaa004.png">
+</div>
+<ul>
+<li>Annual interest rate is the same (<i>stated</i>): <b>10%</b>. but the <i>monthly rate of interest</i> would be <b>0.10/12</b>.</li>
+<li>PV is the same: <b>$100 000</b>.</li>
+<li>Calculation using excel gives PMT= $2 125</li>
+<li>For the question: How many do you owe after thirty months? you need to calculate <b>PV</b> with </li>
+</ul>
+<div style='padding-left: 30pt'>
+PMT= $2 125, <b>r</b>= 0.10/12 and <b>n= 30 </b>(looking from point 30 forward point 60 are 30 periods).
+</div>
+<ul>
+<li>The <b>effective</b> annual rate (EAR) is the actual annual rate and is calculated using the following relation:</li>
+</ul>
+<div style='padding-left: 30pt'>
+ <img src="./Finances/equation010.png">
+</div>
+<i>r</i> is stated interest rate (annual)<br>
+and <i>k</i> is the number of periods in a year (e.g. monthly 12, daily 365, etc.).<br>
+<ul>
+<li>Applying this to the problem gives a EAR of 10.47%. The difference (~0.5%) can be significant if you are borrowing a lot of money. </li>
+</ul>
+<a href="file:///D:/Copy/00_BIBLIO/COURSES/Introduction%20to%20Finance/2.9%20Valuing%20Perpetuities%20(1246).mp4" title="2.9. Valuing Perpetuities" class="file">2.9. Valuing Perpetuities</a><br>
+<ul>
+<li>A perpetuity a set of payments that are paid forever, with or without growth. </li>
+<li>Examples of perpetuities are the bonds and stocks.</li>
+<li>Bonds are <b>limited</b> in maturity. </li>
+<li><b>Stocks</b> hopefully goes on forever. A company generally is not created to last a determined period, it is created to last forever (or during a long period of time).</li>
+<li>The PV of a perpetuity is  <img src="./Finances/equation011.png"></li>
+</ul>
+</p>
+
+<p>
+<ul>
+<li>If there is a growth rate (called <b>g</b>), the formula becomes <img src="./Finances/equation012.png"></li>
+</ul>
+.<br>
+<ul>
+<li>Do not use the formulas <b>blindly</b>.</li>
+<li>this example integrates the examples of time value of money:</li>
+</ul>
+<div style='padding-left: 30pt'>
+<tt>Suppose you are exactly 30 years old. you believe that you will be able to save for the next 20 years,  until you are 50. For 10 years following that, and till your retirement at age 60, you will have a spike in you expenses and you will not be able to save. if you want to guarantee yourself $100 000 per year starting on your 61st birthday, how much should you save every year, for the next 20 years, starting at the end of this year. Assume that your investments are expected to yield 8% and you are likely to live till 80.</tt>
+</div>
+<ul>
+<li>All the variables in this problem is supposed to be decision of person. Even the interest rate of <b>8%</b> assumes a profile inclined to invest in risky stuff.</li>
+</ul>
+<a href="file:///D:/Copy/00_BIBLIO/COURSES/Introduction%20to%20Finance/2.10%20Mega%20Example%20Putting%20it%20All%20Together!%20(1600).mp4" title="2.10. Mega example putting it all together!" class="file">2.10. Mega example putting it all together!</a><br>
+<ul>
+<li>Timeline:</li>
+</ul>
+<img src="./Finances/ditaa005.png"><br>
+<ul>
+<li>Between 50 and 60 you spend the amount that you earn (no savings, no consume).</li>
+<li>First we calculate <b>PV1</b> with pmt= $100 000 n=20 periods, r=8%. answer is $981 815.</li>
+<li>Second we calculate <b>PV2</b> using <b>PV1</b> as the known <b>FV</b> with n= 10 periods, r= 8% and no payments. answer is $454 770.</li>
+<li>Finally we calculate <b>PMT</b> using <b>PV2</b> as the known <b>FV</b> with n= 20 periods, r= 8%. answer is $9 937.</li>
+<li>Note that it is assumed that the annual savings are collected at the end of the each period.</li>
+<li>Analogously, the consuming payments are retired at the beginning of each period from <i>number 61</i>. </li>
+</ul>
+</p>
+
+
+						<!--  -->
+						<h2 id="76412584">Week 3</h2>
+						
+						<p>
+<a href="file:///D:/Copy/00_BIBLIO/COURSES/Introduction%20to%20Finance/3.1%20Recap%20Week%202%20(2209).mp4" title="3.1. Recap Week 2" class="file">3.1. Recap Week 2</a><br>
+<ul>
+<li>The previous problems is developed but considering the following approach: if you want to guarantee yourself <b>$8 000 per month</b>, starting one month after your 60th birthday, how much should you save <b>every month</b>, for the next 20 years, starting at the end of next month. Assume that  your investments are expected to yield 8% annually and you are likely to live till 80.</li>
+</ul>
+<div style='padding-left: 30pt'>
+<img src="./Finances/ditaa006.png">
+</div>
+<ul>
+<li>Now the data that must be inserted in the problem are PMT= $8 000, n= 240 and <b>r=0.08/12.</b></li>
+<li>The solution sequence is the same.</li>
+<li>PV1= $956 434</li>
+<li>PV2= $430 896 (<i>the compounding is monthly</i>)</li>
+<li>PMT=<b>$731.5</b> <b>monthly</b>.</li>
+<li>Take into account that <i>8% is very high</i>.</li>
+<li>More months, more growth.</li>
+<li>The greater the interest, higher the growth.</li>
+</ul>
+<a href="file:///D:/Copy/00_BIBLIO/COURSES/Introduction%20to%20Finance/3.2%20Decision%20Criteria%20NPV%20(2009).mp4" title="3.2. Decision criteria NPV" class="file">3.2. Decision criteria NPV</a><br>
+<ul>
+<li>There are various ways for assessing  the value creation with new ideas (or projects).</li>
+<li>Context building
+<ul>
+<li>start with an idea/project.</li>
+<li>A collection of ideas/projects is a firm/company.</li>
+<li>Value creation only through good ideas/projects.</li>
+<li>How do you determine what is a good idea/project?</li>
+</ul>
+</li>
+<li>Properties of a <i>good</i> decision criteria:
+<ul>
+<li>Makes sense (benefits exceed costs).</li>
+<li>Unit of measurement (meaning).</li>
+<li>Benchmark obvious (if it is in a good region, by comparison with others)</li>
+<li>Easy to communicate. It is important in order to have the desired decision and to convince.</li>
+<li>Easy to compare with other ideas/projects (even different in nature).</li>
+<li>Easy to calculate.</li>
+</ul>
+</li>
+<li><i>Example</i>: Assume and interest rate r= <b>10%</b>; what is the NPV of this idea?</li>
+</ul>
+<div style='padding-left: 30pt'>
+<img src="./Finances/equation013.png">
+</div>
+<ul>
+<li>The <b>negative</b><i> sign is extremely important</i>. It is an <b>outflow</b>.</li>
+<li>Consider that most great ideas are actually very intense on the outflow (investment, effort, resources, people, etc.) in the beginning.</li>
+<li>The word discounting is used because the cash flow after first year <i>is brought</i> to present.</li>
+<li>the <b>NPV</b> is very <b>different</b> to present value (it comes after the investment <i>subtraction</i>).</li>
+</ul>
+<a href="file:///D:/Copy/00_BIBLIO/COURSES/Introduction%20to%20Finance/3.3%20NPV%20Intuition%20%26%20Beauty%20(1855).mp4" title="3.3. NPV Intuition and Beauty" class="file">3.3. NPV Intuition and Beauty</a><br>
+<ul>
+<li>Cash flows <b>belongs to</b> the project. It is better to understand them <i>as profits, not revenues</i>.</li>
+<li>Cash flows come from what is your sense of the project, and reflects the ability to convert the idea in costs and benefits.</li>
+<li><i>Where does "r" comes from?.</i> it is <b>critical</b>. r captures the <i>opportunity cost</i> of investing in the project.</li>
+<li><b>r</b> comes from the next best use of even your own investment on a <b>similar</b> <b>project</b>. So r <b>is not belonging</b> to your project. It is like the return of investing on a competitor.</li>
+<li>When r is defined, you should be thinking like the <b>investor</b> in you or other people.</li>
+<li><b>NPV</b> is the <i>value that you add</i> to you by your project. It is created by what the competitor could have done (<b>through</b> <b>r</b>).</li>
+<li>The project should be done. You are creating a <b>positive value</b>.</li>
+<li>What if you do not have the resources to do so?: the answer is the <b>market</b>. A competitive market with fair resources alternatives. At this point it is assumed that resources are available (thus, the market is available).</li>
+<li>Value creation is <i>always</i> <i>incremental</i>, relative to a known and similar projects. </li>
+<li>To illustrate that, suppose a existing project with a <b>r=10%</b>, it means that an initial investment of <b>$1 000</b> in that project would generate a cash flow of <b>$1 100</b> after one year from now. By the other hand, your project (new idea) offers a cash flow of <b>$1 320</b> after the same lapse. So, after one year, you have created $220 more than if you were invested in the firs option, which has a present value of <b>$200</b> (equivalent to NVP).</li>
+<li><b>value is not created in absolute amounts, value is always created in a relative amount.</b></li>
+<li><i>Example</i>:</li>
+</ul>
+<div style='padding-left: 30pt'>
+<img src="./Finances/equation014.png">
+</div>
+<ul>
+<li>When you use excel <i>do not include the investment together with payments!. </i>Excel NPV function is a rarely doing PV of future cash flows. Thus, do not give time 0 information.</li>
+</ul>
+<a href="file:///D:/Copy/00_BIBLIO/COURSES/Introduction%20to%20Finance/3.4%20NPV%20Properties%20%26%20Formula%20(947).mp4" title="3.4. NPV Properties and formula" class="file">3.4. NPV Properties and formula</a><br>
+<ul>
+<li>For the calculation of NPV, as the time gets longer, refining the numbers doesn't pay off.</li>
+<li>Do not think that the result of NPV is an exact number nor a right answer (because of uncertainty -it is about the future).</li>
+<li>Using NPV makes sense because  it estimates the value at the present time of a value-generating project. (benefits-costs).</li>
+<li>One disadvantage of NPV is that it has an static view of the future (it doesn't have flexibility).</li>
+</ul>
+<a href="file:///D:/Copy/00_BIBLIO/COURSES/Introduction%20to%20Finance/3.5%20Decision%20Criteria%20Payback%20(1544).mp4" title="3.5 decision criteria: payback" class="file">3.5 decision criteria: payback</a><br>
+<ul>
+<li>﻿For the following timeline:  </li>
+</ul>
+<div style='padding-left: 30pt'>
+<img src="./Finances/equation015.png">
+</div>
+<ul style='padding-left: 30pt'>
+<li>payback would be <b>2</b> years (at the end of <i>second</i> year) you recover all the initial payment.</li>
+<li>supposing that the second payment would be $500 the payback period is <b>2.1 </b>because the remaining $200 at the end of second period is the tenth part of the third cash flow.</li>
+<li>payback calculation can be carried out taking into account <b>discounting</b> (it is called <i>discounted payback</i>). It is expected that it would be greater than conventional payback.</li>
+<li>Payback (discounted or not) <i>is not</i> a good criteria to use in the context of starting a company or invest in a idea. From the beginning, this criteria assumes a limited lifetime of a project. <i>This premise assumes that capital market exist, and that the money will flow with easily to good projects (no your own resources). </i>However, the use of Payback as decision criteria is extended because of its facility of calculation.</li>
+<li>Comparing projects using this criteria can indicate wrong choices, given that future profits of each alternative  (after payback) are ignored. for example comparing the following projects:</li>
+</ul>
+<div style='padding-left: 30pt'>
+<img src="./Finances/ditaa007.png">
+</div>
+will favor the project A, despite that the project B is the best choice (long term value). A is known as a <i>myopic idea. </i><br>
+<ul>
+<li>Research projects seems more like project B.</li>
+</ul>
+</p>
+
+<br>
+<br>
+<br>
+
+
+						<!--  -->
+						<h2 id="13822">Week 4</h2>
+						
+						
+					<br><br>
+				</div>
+            </div>
+            <br>
+            <div class="visualClear"><span></span></div>
+
+		<!--  -->
+			<!--  -->
+				<!-- <b>Attachments:</b> -->
+				<!-- <table> -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/ditaa.dia'>ditaa.dia</a></td><td>&nbsp;</td><td>153b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/ditaa.png'>ditaa.png</a></td><td>&nbsp;</td><td>1.79kb</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/ditaa001.dia'>ditaa001.dia</a></td><td>&nbsp;</td><td>120b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/ditaa001.png'>ditaa001.png</a></td><td>&nbsp;</td><td>1.93kb</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/ditaa002.dia'>ditaa002.dia</a></td><td>&nbsp;</td><td>108b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/ditaa002.png'>ditaa002.png</a></td><td>&nbsp;</td><td>1.29kb</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/ditaa003.dia'>ditaa003.dia</a></td><td>&nbsp;</td><td>179b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/ditaa003.png'>ditaa003.png</a></td><td>&nbsp;</td><td>2.36kb</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/ditaa004.dia'>ditaa004.dia</a></td><td>&nbsp;</td><td>219b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/ditaa004.png'>ditaa004.png</a></td><td>&nbsp;</td><td>2.34kb</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/ditaa005.dia'>ditaa005.dia</a></td><td>&nbsp;</td><td>483b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/ditaa005.png'>ditaa005.png</a></td><td>&nbsp;</td><td>6.24kb</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/ditaa006.dia'>ditaa006.dia</a></td><td>&nbsp;</td><td>482b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/ditaa006.png'>ditaa006.png</a></td><td>&nbsp;</td><td>6.21kb</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/ditaa007.dia'>ditaa007.dia</a></td><td>&nbsp;</td><td>346b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/ditaa007.png'>ditaa007.png</a></td><td>&nbsp;</td><td>3.28kb</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/equation.png'>equation.png</a></td><td>&nbsp;</td><td>575b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/equation.tex'>equation.tex</a></td><td>&nbsp;</td><td>18b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/equation001.png'>equation001.png</a></td><td>&nbsp;</td><td>356b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/equation001.tex'>equation001.tex</a></td><td>&nbsp;</td><td>7b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/equation002.png'>equation002.png</a></td><td>&nbsp;</td><td>653b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/equation002.tex'>equation002.tex</a></td><td>&nbsp;</td><td>27b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/equation003.png'>equation003.png</a></td><td>&nbsp;</td><td>396b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/equation003.tex'>equation003.tex</a></td><td>&nbsp;</td><td>17b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/equation004.png'>equation004.png</a></td><td>&nbsp;</td><td>3.48kb</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/equation004.tex'>equation004.tex</a></td><td>&nbsp;</td><td>263b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/equation005.png'>equation005.png</a></td><td>&nbsp;</td><td>1.34kb</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/equation005.tex'>equation005.tex</a></td><td>&nbsp;</td><td>60b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/equation006.png'>equation006.png</a></td><td>&nbsp;</td><td>1.06kb</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/equation006.tex'>equation006.tex</a></td><td>&nbsp;</td><td>73b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/equation007.png'>equation007.png</a></td><td>&nbsp;</td><td>3.12kb</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/equation007.tex'>equation007.tex</a></td><td>&nbsp;</td><td>246b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/equation008.png'>equation008.png</a></td><td>&nbsp;</td><td>983b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/equation008.tex'>equation008.tex</a></td><td>&nbsp;</td><td>47b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/equation009.png'>equation009.png</a></td><td>&nbsp;</td><td>6.03kb</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/equation009.tex'>equation009.tex</a></td><td>&nbsp;</td><td>433b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/equation010.png'>equation010.png</a></td><td>&nbsp;</td><td>833b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/equation010.tex'>equation010.tex</a></td><td>&nbsp;</td><td>34b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/equation011.png'>equation011.png</a></td><td>&nbsp;</td><td>393b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/equation011.tex'>equation011.tex</a></td><td>&nbsp;</td><td>14b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/equation012.png'>equation012.png</a></td><td>&nbsp;</td><td>469b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/equation012.tex'>equation012.tex</a></td><td>&nbsp;</td><td>16b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/equation013.png'>equation013.png</a></td><td>&nbsp;</td><td>3.67kb</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/equation013.tex'>equation013.tex</a></td><td>&nbsp;</td><td>243b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/equation014.png'>equation014.png</a></td><td>&nbsp;</td><td>4.46kb</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/equation014.tex'>equation014.tex</a></td><td>&nbsp;</td><td>276b</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/equation015.png'>equation015.png</a></td><td>&nbsp;</td><td>2.96kb</td></tr> -->
+    		<!--  -->
+		<!--  -->
+			<!--  -->
+				<!-- <tr><td><a href='./Finances/equation015.tex'>equation015.tex</a></td><td>&nbsp;</td><td>204b</td></tr> -->
+    		<!--  -->
+			<!-- </table> -->
+			<!--  -->
+		<!--  -->
+
+        </div>
+        <div id="disqus_thread"><span></span></div>
+
+    </div>
+    <div id="mw-navigation">
+        <h2>Navigation menu</h2>
+        <div id="mw-head">
+            <div id="left-navigation">
+                <div id="p-namespaces" role="navigation" class="vectorTabs" aria-labelledby="p-namespaces-label">
+                    <h3 id="p-namespaces-label">Namespaces</h3>
+                    <ul>
+                        <li id="ca-nstab-main" class="selected"><span>TechNotes</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="right-navigation">
+                <div id="p-views" role="navigation" class="vectorTabs" aria-labelledby="p-views-label">
+                    <h3 id="p-views-label">Views</h3>
+                    <ul>
+                        <div id="p-search" role="search">
+                            <form action="https://www.google.com/search" method="GET" name="searchForm" id="searchForm" enctype="application/x-www-form-urlencoded" >
+
+							<div id="simpleSearch">
+							<input name="sitesearch" value="grimdorlf.github.io" type="hidden">
+                            <input id="searchInput" name="q" results="0" placeholder="Search TechNotes..." title="Search in TechNotes..." tabindex="1" autocomplete="off" type="search">
+                            <input id="searchButton" name="go" value="Go" title="Go to a page with this exact name if it exists" class="searchButton" type="submit">
+							</div>
+
+							<div class="suggestions"><div class="suggestions-results"><span></span></div></div>
+                            </form>
+					    </div>
+
+                    </ul>
+                </div>
+                <div id="p-cactions" role="navigation" class="vectorMenu emptyPortlet" aria-labelledby="p-cactions-label">
+                    <h3 tabindex="0" id="p-cactions-label"><span>Actions</span><a tabindex="-1" href="#"></a></h3>
+                    <div class="menu">
+                        <ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="collapsible-nav" id="mw-panel">
+            <div id="p-logo" role="banner">
+                <a style="background-image:url(logo.png); background-size: contain;" href="./About.html" title="Visit the main page"><span></span></a>
+            </div>
+            <div class="portal first persistent" role="navigation" id="p-navigation" aria-labelledby="p-navigation-label">
+                <h3 id="p-navigation-label">Navigation</h3>
+                <div class="body">
+                    <ul>
+						<ul>
+<li><a href="./About.html" title="About" class="page">About</a></li>
+<li><a href="./Absorption_chillers.html" title="Absorption chillers" class="page">Absorption chillers</a></li>
+<li><a href="./Amostragem_Carvão.html" title="Amostragem Carvão" class="page">Amostragem Carvão</a></li>
+<li><a href="./Chemical_Exergy.html" title="Chemical Exergy" class="page">Chemical Exergy</a></li>
+<li><a href="./Co-firing.html" title="Co-firing" class="page">Co-firing</a></li>
+<li><a href="./Cogeneration.html" title="Cogeneration" class="page">Cogeneration</a></li>
+<li><a href="./Designing_processes.html" title="Designing processes" class="page">Designing processes</a></li>
+<li><a href="./Economic_Analysis.html" title="Economic Analysis" class="page">Economic Analysis</a></li>
+<li><a href="./Exergoeconomics.html" title="Exergoeconomics" class="page">Exergoeconomics</a></li>
+<li><a href="./Exergy_applications.html" title="Exergy applications" class="page">Exergy applications</a></li>
+<li><a href="./Exergy_balance.html" title="Exergy balance" class="page">Exergy balance</a></li>
+<li><a href="./Exergy_definition.html" title="Exergy definition" class="page">Exergy definition</a></li>
+<li><a href="./Exergy_efficiency.html" title="Exergy efficiency" class="page">Exergy efficiency</a></li>
+<li><a href="./Expert_systems.html" title="Expert systems" class="page">Expert systems</a></li>
+<li><b>Finances</b></li>
+<li><a href="./Glossary.html" title="Glossary" class="page">Glossary</a></li>
+<li><a href="./Peat.html" title="Peat" class="page">Peat</a></li>
+<li><a href="./Sankey_Diagram.html" title="Sankey Diagram" class="page">Sankey Diagram</a></li>
+<li><a href="./Simulation_software_comparison.html" title="Simulation software comparison" class="page">Simulation software comparison</a></li>
+<li><a href="./Steam_turbines.html" title="Steam turbines" class="page">Steam turbines</a></li>
+<li><a href="./Termelétricas_a_carvão.html" title="Termelétricas a carvão" class="page">Termelétricas a carvão</a></li>
+<li><a href="./Thermoeconomics.html" title="Thermoeconomics" class="page">Thermoeconomics</a></li>
+</ul>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="portal">
+            	<div style="display: block;" class="body">
+            		<ul id="p-tb-list">
+                        <li><a href="./index.html" title="Index">Index</a></li>
+                        <li><a href="./About.html" title="About">About</a></li>
+                        <li><a href="./Contact Info.html" title="Contact Info">Contact Info</a></li>
+            		</ul>
+            	</div>
+            </div>
+        </div>
+    </div>
+    <div id="footer" role="contentinfo">
+        <ul id="footer-places">
+            <li id="footer-places-about"><a href="./About.html" title="About">About TechNotes</a></li>
+            <li id="footer-places-disclaimer"><a href="./General_disclaimer.html.html" title="General disclaimer">Disclaimers</a></li>
+            <li id="footer-info-copyright">Content is available under <a class="external" rel="nofollow" href="http://creativecommons.org/licenses/by/3.0/">Attribution 3.0 Unported</a> unless otherwise noted.</li>
+        </ul>
+		<ul id="footer-icons" class="noprint">
+				<li id="footer-copyrightico">
+					<a href="http://creativecommons.org/licenses/by/3.0/"><img src="ccby_88x31.png" alt="Attribution 3.0 Unported" height="31" width="88"></a>
+			</li>
+		</ul>
+    </div>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">top</button>
+
+<script>
+//Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+<script>
+$(document).ready(function () {
+    'use strict';
+    /* Set up search */
+    $.getJSON('/searchIndex.json', function (response) {
+	    var index, store;
+        // Create index
+        index = lunr.Index.load(response.index);
+        // Create store
+        store = response.store;
+        // Handle search
+        $('input#searchInput').on('keyup', function () {
+            // Get query
+            var query = $(this).val();
+            // Search for it
+            var resultdiv = $('div.suggestions');
+            if(query === ''){
+                /*resultdiv.empty();*/
+                resultdiv.hide();
+            }
+            else {
+                var result = index.search(query);
+                // Output it
+                if (result.length === 0) {
+                    // Hide results
+                    resultdiv.hide();
+                } else {
+                    // Show results
+                    var subresultdiv=$('div.suggestions-results')
+                    subresultdiv.empty();
+                    for (var item in result) {
+                        var ref = result[item].ref;
+                        var searchitem = '<a class="mw-searchSuggest-link" href="' + ref + '"><div class="suggestions-result">' + store[ref].title + '</div></a>';
+                        subresultdiv.append(searchitem);
+                    }
+                    resultdiv.show();
+                }
+            }
+        });
+    });
+	tocbot.init({
+  		tocSelector: '.js-toc',
+  		contentSelector: '.js-toc-content',
+  		headingSelector: 'h2',
+	});
+});
+/* autohide search box */
+$(document).mouseup(function(e) {
+    var container = $("div.suggestions");
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+        container.hide();
+    }
+    var searchbox = $('div#p-search');
+    if (searchbox.is(e.target) || searchbox.has(e.target).length !== 0) {
+        container.show();
+    }
+});
+
+
+</script>
+<noscript>Please enable JavaScript to get search, toc, comments and other stuff.</noscript>
+</body>
+</html>
